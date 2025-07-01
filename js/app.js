@@ -358,8 +358,8 @@ if($('.selection__search').length){
   const $stop = $('.numbers').innerHeight() + $('.numbers').offset().top;
   $(document).on("scroll", function(){
     const $top = $(this).scrollTop();
-    if($top > $selectionSearchTop - $('header').innerHeight()){
-      if($top < $stop - $('header').innerHeight() * 2){
+    if($top > $selectionSearchTop - $('header').innerHeight() * 1.3){
+      if($top < $stop - $('header').innerHeight() * 5){
         $('.selection__search').addClass('selection__search_fixed')
       } else{
         $('.selection__search').removeClass('selection__search_fixed')
