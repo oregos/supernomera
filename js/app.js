@@ -393,6 +393,58 @@ $(document).keyup(function(e) {
 });
 
 
+ /*---------------------Слайдер акций------------------------------------------*/
+new Swiper(".js-documents-slider", {
+  //spaceBetween: 24,
+  mousewheel: {
+    forceToAxis: true
+  },
+
+  navigation: {
+    nextEl: ".documents-slider__next",
+    prevEl: ".documents-slider__prev",
+  },
+    breakpoints: {
+
+    0: {
+      spaceBetween: 12,
+      slidesPerView: 'auto',
+    },
+
+    900: {
+      spaceBetween: 24,
+      slidesPerView: 5,
+    }
+  }
+});
+
+
+ /*--------------------Галлерея-----------------------------------------*/
+$('.js-zoom-gallery').magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  closeOnContentClick: false,
+  closeBtnInside: false,
+  mainClass: 'mfp-with-zoom mfp-img-mobile',
+  allowHTMLInTemplate: true,
+  image: {
+    verticalFit: true,
+  },
+
+  gallery: {
+    enabled: true
+  },
+  zoom: {
+    enabled: true,
+    duration: 300,
+    opener: function(element) {
+      return element.find('img');
+    }
+  }
+
+});
+
+
 //const popUpElement = document.getElementById("pop-up");
 
 
