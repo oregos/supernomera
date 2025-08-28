@@ -445,6 +445,13 @@ $('.js-zoom-gallery').magnificPopup({
 });
 
 
+ /*--------------------Навигация в текстовых страницах-----------------------------------------*/
+ $(document).on("click",".js-information", function (e) {
+   e.preventDefault();
+   $(this).toggleClass('active').next().stop().slideToggle();
+  })
+
+
 //const popUpElement = document.getElementById("pop-up");
 
 

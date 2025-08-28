@@ -352,6 +352,7 @@
                             forceToAxis: true
                         },
                         
+                        slidesPerView: 'auto',
 
                         navigation: {
                             nextEl: ".insta-gallery__next",
@@ -361,26 +362,18 @@
                         watchSlidesProgress: true,
                         breakpoints: {
                             0: {
-                                spaceBetween: 12,
-                                slidesPerView: 'auto',
                                 initialSlide: 0,
                             },
 
                             900: {
-                                spaceBetween: 12,
-                                slidesPerView: 4,
                                 initialSlide: 1,
                             },
 
                             1400: {
-                                spaceBetween: 20,
-                                slidesPerView: 4,
                                 initialSlide: 1,
                             },
 
                             2000: {
-                                spaceBetween: 30,
-                                slidesPerView: 4,
                                 initialSlide: 1,
                             }
                         }
