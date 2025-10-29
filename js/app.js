@@ -452,6 +452,46 @@ $('.js-zoom-gallery').magnificPopup({
   })
 
 
+     /*----------------------disabled если не проставлен чекбокс-------------------------------------------*/
+   $('.js-disabled input').change(function() {
+     const $ths = $(this);
+     if($ths.is(':checked')) {
+      $ths.parents('form').find('.js-disabled-button').prop('disabled', false);
+   } 
+   else {
+      $ths.parents('form').find('.js-disabled-button').prop('disabled', true);
+   }
+});
+
+
+/*----------------------Анимация на странице успешного оформление заказа-------------------------------------------*/
+   if($('.success').length){
+    setTimeout(function(){
+      $('.success__icon').addClass('active')
+    },500)
+   }
+
+
+/*----------------------Модалки текстовые-------------------------------------------*/
+   $('.popup-with-zoom-anim').magnificPopup({
+    type: 'inline',
+    fixedContentPos: false,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    closeBtnInside: true,
+    preloader: false,
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'my-mfp-zoom-in'
+  });
+
+
+ $(document).on("click",".js-close-modal", function (e) {
+   e.preventDefault();
+   $.magnificPopup.close();
+  })
+
+
 //const popUpElement = document.getElementById("pop-up");
 
 
