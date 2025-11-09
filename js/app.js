@@ -404,7 +404,7 @@ new Swiper(".js-documents-slider", {
     nextEl: ".documents-slider__next",
     prevEl: ".documents-slider__prev",
   },
-    breakpoints: {
+  breakpoints: {
 
     0: {
       spaceBetween: 12,
@@ -446,50 +446,93 @@ $('.js-zoom-gallery').magnificPopup({
 
 
  /*--------------------Навигация в текстовых страницах-----------------------------------------*/
- $(document).on("click",".js-information", function (e) {
-   e.preventDefault();
-   $(this).toggleClass('active').next().stop().slideToggle();
-  })
+$(document).on("click",".js-information", function (e) {
+ e.preventDefault();
+ $(this).toggleClass('active').next().stop().slideToggle();
+})
 
 
      /*----------------------disabled если не проставлен чекбокс-------------------------------------------*/
-   $('.js-disabled input').change(function() {
-     const $ths = $(this);
-     if($ths.is(':checked')) {
-      $ths.parents('form').find('.js-disabled-button').prop('disabled', false);
-   } 
-   else {
-      $ths.parents('form').find('.js-disabled-button').prop('disabled', true);
-   }
+$('.js-disabled input').change(function() {
+ const $ths = $(this);
+ if($ths.is(':checked')) {
+  $ths.parents('form').find('.js-disabled-button').prop('disabled', false);
+} 
+else {
+  $ths.parents('form').find('.js-disabled-button').prop('disabled', true);
+}
 });
 
 
 /*----------------------Анимация на странице успешного оформление заказа-------------------------------------------*/
-   if($('.success').length){
-    setTimeout(function(){
-      $('.success__icon').addClass('active')
-    },500)
-   }
+if($('.success').length){
+  setTimeout(function(){
+    $('.success__icon').addClass('active')
+  },500)
+}
 
 
 /*----------------------Модалки текстовые-------------------------------------------*/
-   $('.popup-with-zoom-anim').magnificPopup({
-    type: 'inline',
-    fixedContentPos: false,
-    fixedBgPos: true,
-    overflowY: 'auto',
-    closeBtnInside: true,
-    preloader: false,
-    midClick: true,
-    removalDelay: 300,
-    mainClass: 'my-mfp-zoom-in'
-  });
+$('.popup-with-zoom-anim').magnificPopup({
+  type: 'inline',
+  fixedContentPos: false,
+  fixedBgPos: true,
+  overflowY: 'auto',
+  closeBtnInside: true,
+  preloader: false,
+  midClick: true,
+  removalDelay: 300,
+  mainClass: 'my-mfp-zoom-in',
+  callbacks: {
+    open: function() {
+
+     if(this.currItem.src == '#order-placed'){
+      const $icon = $('.order-placed-modal__icon');
+      if(!$icon.hasClass('active')){
+        setTimeout(function(){
+          $icon.addClass('active')
+        }, 500)
+      }
+    }
+
+  }
+}
 
 
- $(document).on("click",".js-close-modal", function (e) {
-   e.preventDefault();
-   $.magnificPopup.close();
-  })
+
+});
+
+
+$(document).on("click",".js-close-modal", function (e) {
+ e.preventDefault();
+ $.magnificPopup.close();
+})
+
+
+
+/*----------------------Выбрать тариф в модалке заказать номер----------------------------------------*/
+$(document).on("click",".js-modal-more-button", function (e) {
+ e.preventDefault();
+ $(this).parents('.modal').find('.js-modal-more-block').stop().slideToggle();
+})
+
+
+
+
+ /*---------------------Слайдер выбрать тариф в модалке-------------------------------------------*/
+new Swiper(".js-order-slider", {
+  slidesPerView: 'auto',
+  spaceBetween: 12,
+  mousewheel: {
+    forceToAxis: true
+  },
+  navigation: {
+    nextEl: ".order-slider__next",
+    prevEl: ".order-slider__prev",
+  },
+});
+
+
 
 
 //const popUpElement = document.getElementById("pop-up");
