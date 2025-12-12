@@ -509,14 +509,11 @@ $(document).on("click",".js-close-modal", function (e) {
 })
 
 
-
 /*----------------------Выбрать тариф в модалке заказать номер----------------------------------------*/
 $(document).on("click",".js-modal-more-button", function (e) {
  e.preventDefault();
  $(this).parents('.modal').find('.js-modal-more-block').stop().slideToggle();
 })
-
-
 
 
  /*---------------------Слайдер выбрать тариф в модалке-------------------------------------------*/
@@ -532,6 +529,24 @@ new Swiper(".js-order-slider", {
   },
 });
 
+
+
+
+/*-----------------------------Открыть окошко куки------------------------------------*/
+const today = '' + new Date().getMonth() + new Date().getDate()
+if(localStorage.getItem("cookie") != today){
+  setTimeout(function(){
+    $(".cookie").addClass('show')
+  }, 1000)
+}
+//Не показывать один день если нажали на "Хорошо"
+$(document).on("click",".js-cookie", function (e) {
+ e.preventDefault();
+ localStorage.setItem("cookie", today);
+ setTimeout(function(){
+  $(".cookie").removeClass('show')
+}, 500)
+})
 
 
 
