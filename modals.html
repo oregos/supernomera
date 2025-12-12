@@ -78,6 +78,17 @@
 					</li>
 				</ul>
 			</div>
+			<div class="your-region">
+				<div class="your-region__title">Ваш регион — Москва и область?</div>
+				<div class="row row_12">
+					<div class="col50">
+						<a href="#" class="btn button js-your-region">Да, верно</a>
+					</div>
+					<div class="col50">
+						<a href="#select-region" class="btn light-button popup-with-zoom-anim">Нет, изменить</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="header-menu">
@@ -237,6 +248,10 @@
 					<br>
 					<li>
 						<a class="popup-with-zoom-anim" href="#order-placed">Заказ оформлен!</a>
+					</li>
+					<br>
+					<li>
+						<a class="popup-with-zoom-anim" href="#select-region">Выберите регион</a>
 					</li>
 					<br>
 				</ul>
@@ -1080,6 +1095,173 @@
 		детали заказа.
 	</p>
 	<button class="btn button js-close-modal">Отлично!</button>
+</div>
+
+<div id="select-region" class="modal select-region-modal zoom-anim-dialog mfp-hide">
+	<h2 class="modal__title">
+		Выберите регион
+	</h2>
+	<div class="search-input">
+		<input type="text" placeholder="Поиск региона" class="js-search">
+	</div>
+	<div class="select-region-modal__scroll decor-scroll">
+		<div class="select-region-modal__not">
+			 Не смогли найти ничего по вашему запросу. Проверьте данные или выберите регион и город из списка 
+		</div>
+		<div class="select-region-modal__hints">
+			<ul class="ul select-region-modal__list">
+				<li>
+					<a href="#" class="select-region-modal__link">Москва и область</a>
+				</li>
+				<li>
+					<a href="#" class="select-region-modal__link">Санкт-Петербург и Ленинградская область</a>
+				</li>
+				<li>
+					<a href="#" class="select-region-modal__link">Челябинская область</a>
+				</li>
+				<li>
+					<a href="#" class="select-region-modal__link">Ростовская область</a>
+				</li>
+				<li>
+					<a href="#" class="select-region-modal__link">Иркутская область</a>
+				</li>
+				<li>
+					<a href="#" class="select-region-modal__link">Свердловская область</a>
+				</li>
+				<li>
+					<a href="#" class="select-region-modal__link">Нижегородская область</a>
+				</li>
+			</ul>
+		</div>
+		<div class="select-region-modal__regions">
+			<div class="row">
+				<div class="col33 col100_mobile">
+					<div class="select-region-modal__left">
+						<ul class="ul select-region-modal__list">
+							<li>
+								<a href="#" class="select-region-modal__link">Москва и область</a>
+							</li>
+							<li>
+								<a href="#" class="select-region-modal__link">Санкт-Петербург и Ленинградская область</a>
+							</li>
+							<li>
+								<a href="#" class="select-region-modal__link">Челябинская область</a>
+							</li>
+							<li>
+								<a href="#" class="select-region-modal__link">Ростовская область</a>
+							</li>
+							<li>
+								<a href="#" class="select-region-modal__link">Иркутская область</a>
+							</li>
+							<li>
+								<a href="#" class="select-region-modal__link">Свердловская область</a>
+							</li>
+							<li>
+								<a href="#" class="select-region-modal__link">Нижегородская область</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col66 col100_mobile">
+					<div class="select-region-modal__right">
+						<div class="select-region-modal__item">
+							<div class="select-region-modal__letter">А</div>
+							<ul class="ul select-region-modal__list">
+								<li>
+									<a href="#" class="select-region-modal__link">Алтайский край</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Архангельская область</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Алтайский край</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Астраханская область</a>
+								</li>
+							</ul>
+						</div>
+						<div class="select-region-modal__item">
+							<div class="select-region-modal__letter">Б</div>
+							<ul class="ul select-region-modal__list">
+								<li>
+									<a href="#" class="select-region-modal__link">Алтайский край</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Алтайский край</a>
+								</li>
+							</ul>
+						</div>
+						<div class="select-region-modal__item">
+							<div class="select-region-modal__letter">В</div>
+							<ul class="ul select-region-modal__list">
+								<li>
+									<a href="#" class="select-region-modal__link">Алтайский край</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Алтайский край</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Алтайский край</a>
+								</li>
+							</ul>
+						</div>
+						<div class="select-region-modal__item">
+							<div class="select-region-modal__letter">Н</div>
+							<ul class="ul select-region-modal__list">
+								<li>
+									<a href="#" class="select-region-modal__link">Алтайский край</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Амурская область</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Архангельская область</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Астраханская область</a>
+								</li>
+							</ul>
+						</div>
+						<div class="select-region-modal__item">
+							<div class="select-region-modal__letter">О</div>
+							<ul class="ul select-region-modal__list">
+								<li>
+									<a href="#" class="select-region-modal__link">Алтайский край</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Амурская область</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Архангельская область</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Астраханская область</a>
+								</li>
+							</ul>
+						</div>
+						<div class="select-region-modal__item">
+							<div class="select-region-modal__letter">Р</div>
+							<ul class="ul select-region-modal__list">
+								<li>
+									<a href="#" class="select-region-modal__link">Астраханская область</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Астраханская область</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Астраханская область</a>
+								</li>
+								<li>
+									<a href="#" class="select-region-modal__link">Астраханская область</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <script src="libs/jquery-3.7.1.min.js"></script>
 <script src="libs/jquery-ui.min.js"></script>

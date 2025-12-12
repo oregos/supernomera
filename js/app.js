@@ -530,23 +530,40 @@ new Swiper(".js-order-slider", {
 });
 
 
-
-
-/*-----------------------------Открыть окошко куки------------------------------------*/
-const today = '' + new Date().getMonth() + new Date().getDate()
-if(localStorage.getItem("cookie") != today){
-  setTimeout(function(){
-    $(".cookie").addClass('show')
-  }, 1000)
-}
+/*-----------------------------Открыть окошко раз в день------------------------------------*/
+function openWindow($cookieName, $blockClass, $classButton){
+  const today = '' + new Date().getMonth() + new Date().getDate()
+  if(localStorage.getItem($cookieName) != today){
+    setTimeout(function(){
+      $($blockClass).addClass('show')
+    }, 1000)
+  }
 //Не показывать один день если нажали на "Хорошо"
-$(document).on("click",".js-cookie", function (e) {
- e.preventDefault();
- localStorage.setItem("cookie", today);
- setTimeout(function(){
-  $(".cookie").removeClass('show')
-}, 500)
-})
+  $(document).on("click",$classButton, function (e) {
+   e.preventDefault();
+   localStorage.setItem($cookieName, today);
+   setTimeout(function(){
+    $($blockClass).removeClass('show')
+  }, 500)
+ })
+}
+//Открыть окошко куки
+openWindow('cookie', '.cookie', '.js-cookie')
+//Открыть окошко выбор "Ваш регион"
+openWindow('your-region', '.your-region', '.js-your-region')
+
+
+/*-------------------Поиск региона----------------------------*/
+$('.js-search').keyup(function(){
+  if($(this).val().length == 0){
+    $('.select-region-modal__regions').show();
+    $('.select-region-modal__hints').hide();
+  } else {
+    $('.select-region-modal__regions').hide();
+    $('.select-region-modal__hints').show();
+  }
+});
+
 
 
 
