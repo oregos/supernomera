@@ -35,7 +35,7 @@
 
 
 </head>
-<body>
+<body class="white-footer">
 	<header class="header">
 	<div class="header__block">
 		<div class="container">
@@ -214,369 +214,342 @@
 		</div>
 	</header>
 	<main>
-		<section class="about">
-			<div class="container mobile">
-				<a href="#" class="btn back-button js-back">Назад</a>
-			</div>
-			<div class="about__block">
-				<div class="container">
+
+		<section class="business">
+			<div class="container">
+				<div class="business__block" style="--bg-image-desktop: url(../images/business/bg.jpg); --bg-image-mobile: url(../images/business/bg_m.jpg);">
+					<div class="mobile">
+						<a href="#" class="btn back-button js-back">Назад</a>
+					</div>
 					<ul class="ul bread desktop">
 						<li>
 							<a href="#" class="bread__link">Главная</a>
 						</li>
 						<li>
-							<a class="bread__link">О компании</a>
+							<a class="bread__link">Юридическим лицам</a>
 						</li>
 					</ul>
-					<div class="about__content">
+					<div class="promotions__content">
 						<h1 class="section-title">
-							Супер номера — компания, которая <span>говорит за вас</span>
+							Мобильная связь <br>для <span>вашего бизнеса</span>
 						</h1>
 						<p class="section-text">
-							Мы стремимся сделать общение удобным, связь — доступной, а каждый контакт с нами — лёгким, честным и выгодным.
+							Корпоративные тарифы от Билайн, МТС и Мегафон с доставкой и подключением за 1 день.
 						</p>
-					</div>
-					<div class="about-find">
-						<div class="about-find__title">
-							Найдите своё идеальное сочетание номера и тарифа
-						</div>
-						<div class="about-find__text">
-							Скидки до 30%
-						</div>
-						<a href="#" class="btn button">Перейти в каталог</a>
+						<a href="#" class="btn button">Получить консультацию</a>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="conveniently conveniently_light">
-			<div class="container">
-				<h2 class="section-title">
-					Качество, стиль и доверие
-				</h2>
-				<p class="section-text">
-					Мы не просто продаём сим-карты — мы создаём сервис, к которому хочется возвращаться. Каждый <br>номер мы подбираем с вниманием к деталям: будь то зеркальный шаблон, дата рождения или номер <br>с «изюминкой» — он подчеркнёт ваш стиль и будет легко запоминаться.
-				</p>
-
-				<ul class="ul row">
-					<li class="col33 col100_mobile">
-						<article class="conveniently-item" style="--bg-image-desktop: url(../images/conveniently/0.png); --bg-image-mobile: url(../images/conveniently/m/0.png);">
-							<h3>
-								300 000+
-							</h3>
-							<p>
-								довольных абонентов с нами
-							</p>
-						</article>
+	<section class="tariffs section">
+		<div class="container">
+			<h2 class="section-title">
+				Лучшие корпоративные тарифы
+			</h2>
+			<div class="tariffs__wrap">
+				<ul class="ul tariffs__filter">
+					<li>
+						<label class="button-radio">
+							<input type="radio" name="operator" checked>
+							<span>Все</span>
+						</label>
 					</li>
-					<li class="col33 col100_mobile">
-						<article class="conveniently-item" style="--bg-image-desktop: url(../images/conveniently/1.png); --bg-image-mobile: url(../images/conveniently/m/1.png);">
-							<h3>
-								>20 лет
-							</h3>
-							<p>
-								опыта в сфере телекоммуникаций
-							</p>
-						</article>
+					<li>
+						<label class="button-radio">
+							<input type="radio" name="operator">
+							<span>Мегафон</span>
+						</label>
 					</li>
-					<li class="col33 col100_mobile">
-						<article class="conveniently-item" style="--bg-image-desktop: url(../images/conveniently/2.png); --bg-image-mobile: url(../images/conveniently/m/2.png);">
-							<h2>
-								Работаем с частными клиентами  и компаниями
-							</h2>
-						</article>
+					<li>
+						<label class="button-radio">
+							<input type="radio" name="operator">
+							<span>Йота</span>
+						</label>
+					</li>
+					<li>
+						<label class="button-radio">
+							<input type="radio" name="operator">
+							<span>Билайн</span>
+						</label>
+					</li>
+					<li>
+						<label class="button-radio">
+							<input type="radio" name="operator">
+							<span>МТС</span>
+						</label>
+					</li>
+					<li>
+						<label class="button-radio">
+							<input type="radio" name="operator">
+							<span>Теле2</span>
+						</label>
 					</li>
 				</ul>
 			</div>
-		</section>
 
+			<div class="tariffs-slider">
+				<div class="swiper js-tariffs-slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<article class="tariffs-item">
+								<h3 class="tariffs-item__title" style="background-image: url(../images/find/1.png);">
+									Тариф Мегафон
+									<strong>Оптимальный</strong>
+								</h3>
+								<ul class="ul tariffs-item__info">
+									<li>35 гб</li>
+									<li>500 мин</li>
+								</ul>
+								<div class="tariffs-item__price">
+									250 ₽ <span>250 ₽ </span>
+								</div>
+								<div class="tariffs-item__buttons">
+									<a href="#" class="btn button">Подключить</a>
+									<a href="#" class="btn light-button">Подробнее</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="tariffs-item">
+								<h3 class="tariffs-item__title" style="background-image: url(../images/find/2.png);">
+									Тариф t2
+									<strong>Эконом</strong>
+								</h3>
+								<ul class="ul tariffs-item__info">
+									<li>35 гб</li>
+									<li>500 мин</li>
+								</ul>
+								<div class="tariffs-item__price">
+									250 ₽ <span>250 ₽ </span>
+								</div>
+								<div class="tariffs-item__buttons">
+									<a href="#" class="btn button">Подключить</a>
+									<a href="#" class="btn light-button">Подробнее</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="tariffs-item">
+								<h3 class="tariffs-item__title" style="background-image: url(../images/find/0.png);">
+									Тариф МТС
+									<strong>Оптимальный</strong>
+								</h3>
+								<ul class="ul tariffs-item__info">
+									<li>35 гб</li>
+									<li>500 мин</li>
+								</ul>
+								<div class="tariffs-item__price">
+									250 ₽ <span>250 ₽ </span>
+								</div>
+								<div class="tariffs-item__buttons">
+									<a href="#" class="btn button">Подключить</a>
+									<a href="#" class="btn light-button">Подробнее</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="tariffs-item">
+								<h3 class="tariffs-item__title" style="background-image: url(../images/find/3.png);">
+									Тариф Yota
+									<strong>На связи</strong>
+								</h3>
+								<ul class="ul tariffs-item__info">
+									<li>35 гб</li>
+									<li>500 мин</li>
+								</ul>
+								<div class="tariffs-item__price">
+									250 ₽ <span>250 ₽ </span>
+								</div>
+								<div class="tariffs-item__buttons">
+									<a href="#" class="btn button">Подключить</a>
+									<a href="#" class="btn light-button">Подробнее</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="tariffs-item">
+								<h3 class="tariffs-item__title" style="background-image: url(../images/find/0.png);">
+									Тариф Мегафон
+									<strong>Оптимальный</strong>
+								</h3>
+								<ul class="ul tariffs-item__info">
+									<li>35 гб</li>
+									<li>500 мин</li>
+								</ul>
+								<div class="tariffs-item__price">
+									250 ₽ <span>250 ₽ </span>
+								</div>
+								<div class="tariffs-item__buttons">
+									<a href="#" class="btn button">Подключить</a>
+									<a href="#" class="btn light-button">Подробнее</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="tariffs-item">
+								<h3 class="tariffs-item__title" style="background-image: url(../images/find/0.png);">
+									Тариф Мегафон
+									<strong>Оптимальный</strong>
+								</h3>
+								<ul class="ul tariffs-item__info">
+									<li>35 гб</li>
+									<li>500 мин</li>
+								</ul>
+								<div class="tariffs-item__price">
+									250 ₽ <span>250 ₽ </span>
+								</div>
+								<div class="tariffs-item__buttons">
+									<a href="#" class="btn button">Подключить</a>
+									<a href="#" class="btn light-button">Подробнее</a>
+								</div>
+							</article>
+						</div>
+					</div>
 
-		<section class="banner">
-			<div class="container">
-				<div class="banner__block" style="--bg-image-desktop: url(../images/banner/0.jpg); --bg-image-mobile: url(../images/banner/m/0.jpg);">
-					<div class="banner__content">
+				</div>
+				<div class="swiper-nav desktop">
+					<div class="swiper-prev tariffs-slider__prev"></div>
+					<div class="swiper-next tariffs-slider__next"></div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="benefits business-benefits">
+		<div class="container">
+			<h2 class="section-title">
+				С нами удобно, выгодно и надёжно 👌
+			</h2>
+			<div class="row">
+				<div class="col66 col100_mobile">
+					<ul class="ul row">
+						<li class="col50 col100_mobile">
+							<article class="benefits-item" style="background-image: url(../images/benefits/business/0.svg);">
+								<h3>Персональный менеджер</h3>
+								<p>Ваш личный специалист всегда на связи и решает любые вопросы.</p>
+							</article>
+						</li>
+						<li class="col50 col100_mobile">
+							<article class="benefits-item" style="background-image: url(../images/benefits/business/1.svg);">
+								<h3>Поддержка 24/7</h3>
+								<p>Круглосуточная помощь — без ожиданий и автоответчиков.</p>
+							</article>
+						</li>
+						<li class="col50 col100_mobile">
+							<article class="benefits-item" style="background-image: url(../images/benefits/business/2.svg);">
+								<h3>Гибкая система скидок</h3>
+								<p>Платите меньше при увеличении объёмов и активности.</p>
+							</article>
+						</li>
+						<li class="col50 col100_mobile">
+							<article class="benefits-item" style="background-image: url(../images/benefits/business/3.svg);">
+								<h3>Индивидуальный подбор</h3>
+								<p>Настраиваем тарифы под задачи каждого сотрудника.</p>
+							</article>
+						</li>
+					</ul>
+				</div>
+				<div class="col33 col100_mobile">
+					<article class="benefits-main">
+						<h3>
+							Эксклюзивные условия
+						</h3>
+						<p>
+							Доступ к специальным тарифам и услугам только для корпоративных клиентов.
+						</p>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="how business-how">
+		<div class="container">
+			<h2 class="section-title">
+				Как подключиться — шаг за шагом
+			</h2>
+
+			<ul class="ul row">
+				<li class="col25 col100_mobile">
+					<article class="how-item">
+						<h3>
+							Оставьте заявку
+						</h3>
+						<p>
+							Заполните короткую форму — менеджер свяжется с вами в течение рабочего дня.
+						</p>
+					</article>
+				</li>
+				<li class="col25 col100_mobile">
+					<article class="how-item">
+						<h3>
+							Пакет документов
+						</h3>
+						<p>
+							Отправьте сканы документов. Нужны только базовые документы юрлица или ИП.
+						</p>
+					</article>
+				</li>
+				<li class="col25 col100_mobile">
+					<article class="how-item">
+						<h3>
+							Подпишите договор
+						</h3>
+						<p>
+							Мы подготовим договор и привезём его вам — всё быстро и удобно.
+						</p>
+					</article>
+				</li>
+				<li class="col25 col100_mobile">
+					<article class="how-item">
+						<h3>
+							Получите SIM-карты
+						</h3>
+						<p>
+							Курьер привезёт симки и документы — подключение уже на следующий день.
+						</p>
+					</article>
+				</li>
+			</ul>
+
+			<div class="how-form">
+				<form>
+					<div class="how-form__block">
 						<h2 class="section-title">
-							Наша миссия — удобство для абонентов, выгода для партнёров
+							Готовы подключить  корпоративный тариф?
 						</h2>
 						<p class="section-text">
-							Мы строим сервис, в котором всё прозрачно, быстро и по-настоящему удобно — для абонентов и партнёров по всей России.
+							Заполните форму и мы расскажем как начать сотрудничество.
+						</p>
+						<div class="row row_12">
+							<div class="col36 col100_mobile">
+								<div class="form-group form-group_light">
+									<input type="text" placeholder="Ваше имя">
+								</div>
+							</div>
+							<div class="col36 col100_mobile">
+								<div class="form-group form-group_light">
+									<input type="tel" placeholder="+7 ___ ___ __ __" data-mask>
+								</div>
+							</div>
+							<div class="col28 col100_mobile">
+								<button class="btn button button_white">Отправить заявку</button>
+							</div>
+						</div>
+						<p class="form-text">
+							Нажимая на кнопку, Вы соглашаетесь с правилами <a href="#">Политики Конфиденциальности</a>
 						</p>
 					</div>
-				</div>
+				</form>
 			</div>
-		</section>
 
-		<section class="section history">
-			<div class="container">
-				<h2 class="section-title">
-					История компании
-				</h2>
-				<ul class="ul row">
-					<li class="col50 col100_mobile">
-						<article class="history-item">
-							<h3>
-								Начало истории
-							</h3>
-							<p>
-								В 2000-х мобильная связь только набирала обороты, и номер телефона становился частью имиджа. Мы вручную подбирали красивые номера — так родилась философия нашей компании.
-							</p>
-						</article>
-					</li>
-					<li class="col50 col100_mobile">
-						<article class="history-item">
-							<h3>
-								От друзей — к бизнесу
-							</h3>
-							<p>
-								Клиентов становилось всё больше: к частным лицам добавились компании. Мы расширяли базу номеров, подключали выгодные тарифы и выстраивали партнёрство с операторами.
-							</p>
-						</article>
-					</li>
-					<li class="col50 col100_mobile">
-						<article class="history-item">
-							<h3>
-								Честность и забота
-							</h3>
-							<p>
-								Для нас важно не просто продавать. Мы работаем с вниманием к деталям, по-честному, с заботой о каждом. Именно поэтому мы первыми в регионе запустили онлайн-подбор по шаблонам и датам.
-							</p>
-						</article>
-					</li>
-					<li class="col50 col100_mobile">
-						<article class="history-item">
-							<h3>
-								Сегодня и завтра
-							</h3>
-							<p>
-								«Супер номера» — это команда профи, десятки тысяч подключений в год и надёжный сервис. Мы улучшаем технологии и поддержку, ведь для нас номер — это не просто цифры. Это история. Ваша история.
-							</p>
-						</article>
-					</li>
-				</ul>
-			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="documents">
-			<div class="container">
-				<h2 class="section-title">
-					Надёжность, <span>подтверждённая</span> <br>
-					документами
-				</h2>
-				<div class="documents-slider">
-					<div class="swiper js-documents-slider js-zoom-gallery">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<a href="images/documents/0.jpg" class="resp documents-item">
-									<img src="images/documents/0.jpg" alt="" width="277" height="386" loading="lazy">
-								</a>
-							</div>
-							<div class="swiper-slide">
-								<a href="images/documents/1.jpg" class="resp documents-item">
-									<img src="images/documents/1.jpg" alt="" width="277" height="386" loading="lazy">
-								</a>
-							</div>
-							<div class="swiper-slide">
-								<a href="images/documents/2.jpg" class="resp documents-item">
-									<img src="images/documents/2.jpg" alt="" width="277" height="386" loading="lazy">
-								</a>
-							</div>
-							<div class="swiper-slide">
-								<a href="images/documents/3.jpg" class="resp documents-item">
-									<img src="images/documents/3.jpg" alt="" width="277" height="386" loading="lazy">
-								</a>
-							</div>
-							<div class="swiper-slide">
-								<a href="images/documents/4.jpg" class="resp documents-item">
-									<img src="images/documents/4.jpg" alt="" width="277" height="386" loading="lazy">
-								</a>
-							</div>
-							<div class="swiper-slide">
-								<a href="images/documents/0.jpg" class="resp documents-item">
-									<img src="images/documents/0.jpg" alt="" width="277" height="386" loading="lazy">
-								</a>
-							</div>
-							<div class="swiper-slide">
-								<a href="images/documents/1.jpg" class="resp documents-item">
-									<img src="images/documents/1.jpg" alt="" width="277" height="386" loading="lazy">
-								</a>
-							</div>
-						</div>
-
-					</div>
-					<div class="swiper-nav desktop">
-						<div class="swiper-prev documents-slider__prev"></div>
-						<div class="swiper-next documents-slider__next"></div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="section find">
-			<div class="container">
-				<h2 class="section-title">
-					Красота в деталях
-				</h2>
-				<p class="section-text mobile">
-					Каждая цифра имеет значение.  Найдите номер, который будет работать на вас – легко запоминающийся, удобный, красивый.
-				</p>
-				<div class="row">
-					<div class="col38 desktop">
-						<aside class="find-aside">
-							<div class="form-group">
-								<input type="text" placeholder="Введите до 6 цифр" data-max="6" class="js_input-only-num">
-							</div>
-							<label class="slide-checkbox">
-								<input type="checkbox">
-								<span><i></i>Сделать красивый «хвост»</span>
-							</label>
-							<ul class="ul checkbox-buttons">
-								<li>
-									<label class="button-radio">
-										<input type="radio" name="type" checked>
-										<span>Все</span>
-									</label>
-								</li>
-								<li>
-									<label class="button-radio">
-										<input type="radio" name="type">
-										<span>Бронзовые</span>
-									</label>
-								</li>
-								<li>
-									<label class="button-radio">
-										<input type="radio" name="type">
-										<span>Серебряные</span>
-									</label>
-								</li>
-								<li>
-									<label class="button-radio">
-										<input type="radio" name="type">
-										<span>Золотые </span>
-									</label>
-								</li>
-							</ul>
-
-							<div class="slider-range">
-								<div class="slider-range__top">
-									<div class="slider-range__title">
-										Цена
-									</div>
-									<div class="slider-range__nums">
-										<div><span id="slider-range-min">250</span> ₽</div> - <div><span id="slider-range-max">2000</span> ₽</div>
-									</div>
-								</div>
-								<div id="slider-range" data-min="0" data-max="5000" data-start-min="250" data-start-max="2000"></div>
-							</div>
-
-						</aside>
-					</div>
-					<div class="col62 col100_mobile">
-						<div class="find__right">
-							<ul class="ul find__list">
-								<li>
-									<div class="find-item" style="background-image: url(images/find/0.png);">
-										<div class="find-item__num">
-											+7 967 325 <span>11</span> <span>11</span>
-										</div>
-										<div class="find-item__right">
-											<div class="find-item__text">12 000 ₽</div>
-											<div class="find-item__text">от 1 250 ₽/мес</div>
-											<button class="btn light-button">Купить</button>
-											<button class="btn favorite-button">Добавить в избранное</button>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="find-item" style="background-image: url(images/find/1.png);">
-										<div class="find-item__num">
-											+7 967 325 <span>11</span> <span>11</span>
-										</div>
-										<div class="find-item__right">
-											<div class="find-item__text">12 000 ₽</div>
-											<div class="find-item__text">от 1 250 ₽/мес</div>
-											<button class="btn light-button">Купить</button>
-											<button class="btn favorite-button">Добавить в избранное</button>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="find-item" style="background-image: url(images/find/2.png);">
-										<div class="find-item__num">
-											+7 967 325 <span>11</span> <span>11</span>
-										</div>
-										<div class="find-item__right">
-											<div class="find-item__text">12 000 ₽</div>
-											<div class="find-item__text">от 1 250 ₽/мес</div>
-											<button class="btn light-button">Купить</button>
-											<button class="btn favorite-button">Добавить в избранное</button>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="find-item" style="background-image: url(images/find/3.png);">
-										<div class="find-item__num">
-											+7 967 325 <span>11</span> <span>11</span>
-										</div>
-										<div class="find-item__right">
-											<div class="find-item__text">12 000 ₽</div>
-											<div class="find-item__text">от 1 250 ₽/мес</div>
-											<button class="btn light-button">Купить</button>
-											<button class="btn favorite-button">Добавить в избранное</button>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="find-item" style="background-image: url(images/find/4.png);">
-										<div class="find-item__num">
-											+7 967 325 <span>11</span> <span>11</span>
-										</div>
-										<div class="find-item__right">
-											<div class="find-item__text">12 000 ₽</div>
-											<div class="find-item__text">от 1 250 ₽/мес</div>
-											<button class="btn light-button">Купить</button>
-											<button class="btn favorite-button">Добавить в избранное</button>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="find-item" style="background-image: url(images/find/0.png);">
-										<div class="find-item__num">
-											+7 967 325 <span>11</span> <span>11</span>
-										</div>
-										<div class="find-item__right">
-											<div class="find-item__text">12 000 ₽</div>
-											<div class="find-item__text">от 1 250 ₽/мес</div>
-											<button class="btn light-button">Купить</button>
-											<button class="btn favorite-button">Добавить в избранное</button>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="find-item" style="background-image: url(images/find/1.png);">
-										<div class="find-item__num">
-											+7 967 325 <span>11</span> <span>11</span>
-										</div>
-										<div class="find-item__right">
-											<div class="find-item__text">12 000 ₽</div>
-											<div class="find-item__text">от 1 250 ₽/мес</div>
-											<button class="btn light-button">Купить</button>
-											<button class="btn favorite-button">Добавить в избранное</button>
-										</div>
-									</div>
-								</li>
-							</ul>
-
-							<div class="find__buttons">
-								<button class="btn reset-button">Обновить список</button>
-								<a href="#" class="btn button">Показать больше номеров</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-			<section class="insta-gallery reviews">
+		<section class="insta-gallery reviews">
 		<div class="container">
 			<div class="section-top">
 				<h2 class="section-title">
@@ -793,42 +766,93 @@
 		</div>
 	</section>
 
-		<section class="how-section">
-			<div class="container">
-				<div class="how-form">
-	<form>
-		<div class="how-form__block">
-			<h2 class="section-title">
-				Не можете определиться?
-			</h2>
-			<p class="section-text">
-				Выберите номер мечты вместе с нашим менеджером. Мы поможем найти лучший вариант и оформим всё на выгодных условиях.
-			</p>
-			<div class="row row_12">
-				<div class="col36 col100_mobile">
-					<div class="form-group form-group_light">
-						<input type="text" placeholder="Ваше имя">
-					</div>
-				</div>
-				<div class="col36 col100_mobile">
-					<div class="form-group form-group_light">
-						<input type="tel" placeholder="+7 ___ ___ __ __" data-mask>
-					</div>
-				</div>
-				<div class="col28 col100_mobile">
-					<button class="btn button button_white">Отправить заявку</button>
-				</div>
-			</div>
-			<p class="form-text">
-				Нажимая на кнопку, Вы соглашаетесь с правилами <a href="#">Политики Конфиденциальности</a>
-			</p>
-		</div>
-	</form>
-</div>
-			</div>
-		</section>
+	<section class="section answers">
+	<div class="container">
+		<h2 class="section-title">
+			Всё, что <span>вы хотели</span> спросить
+		</h2>
+		<div class="row">
+			<div class="col66 col100_mobile">
+				<div class="accordeon js_accordeon">
+					<article class="accordeon__item">
+						<h3 class="accordeon__title">
+							Как сменить владельца номера?
+						</h3>
+						<div class="accordeon__text">
+							Чтобы переоформить номер на другого человека внутри компании «Агентство Связи», нужно, чтобы оба пришли в наш офис с паспортами. Если владелец номера не может присутствовать, потребуется доверенность, заверенная нотариусом.
+							Для дистанционного переоформления отправьте запрос на help@k7.ru.
+							Переоформление номера внутри компании — бесплатно
+						</div>
+					</article>
+					<article class="accordeon__item">
+						<h3 class="accordeon__title">
+							Можно ли перейти в «‎Супер номера» со своим номером?
+						</h3>
+						<div class="accordeon__text">
+							Чтобы переоформить номер на другого человека внутри компании «Агентство Связи», нужно, чтобы оба пришли в наш офис с паспортами. Если владелец номера не может присутствовать, потребуется доверенность, заверенная нотариусом.
+							Для дистанционного переоформления отправьте запрос на help@k7.ru.
+							Переоформление номера внутри компании — бесплатно
+						</div>
+					</article>
+					<article class="accordeon__item">
+						<h3 class="accordeon__title">
+							При оплате ошибочно указал чужой номер, что делать?
+						</h3>
+						<div class="accordeon__text">
+							Чтобы переоформить номер на другого человека внутри компании «Агентство Связи», нужно, чтобы оба пришли в наш офис с паспортами. Если владелец номера не может присутствовать, потребуется доверенность, заверенная нотариусом.
+							Для дистанционного переоформления отправьте запрос на help@k7.ru.
+							Переоформление номера внутри компании — бесплатно
+						</div>
+					</article>
+					<article class="accordeon__item">
+						<h3 class="accordeon__title">
+							Как оплатить номер с банковской карты?
+						</h3>
+						<div class="accordeon__text">
+							Чтобы переоформить номер на другого человека внутри компании «Агентство Связи», нужно, чтобы оба пришли в наш офис с паспортами. Если владелец номера не может присутствовать, потребуется доверенность, заверенная нотариусом.
+							Для дистанционного переоформления отправьте запрос на help@k7.ru.
+							Переоформление номера внутри компании — бесплатно
+						</div>
+					</article>
+					<article class="accordeon__item">
+						<h3 class="accordeon__title">
+							Как управлять номером и услугами?
 
-	</main>
+						</h3>
+						<div class="accordeon__text">
+							Чтобы переоформить номер на другого человека внутри компании «Агентство Связи», нужно, чтобы оба пришли в наш офис с паспортами. Если владелец номера не может присутствовать, потребуется доверенность, заверенная нотариусом.
+							Для дистанционного переоформления отправьте запрос на help@k7.ru.
+							Переоформление номера внутри компании — бесплатно
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="col33 col100_mobile">
+				<div class="answers-contact">
+					<h3 class="answers-contact__title">
+						Остались вопросы?
+					</h3>
+					<p class="answers-contact__text">
+						С удовольствием на них ответим с 9:00-20:00.
+					</p>
+					<div class="answers-contact__bottom">
+						<a href="#" class="btn button">Заказать звонок</a>
+						<ul class="ul answers-soc">
+							<li>
+								<a href="#" class="answers-soc__link answers-soc__link_tl">Связаться через </a>
+							</li>
+							<li>
+								<a href="#" class="answers-soc__link answers-soc__link_wh">Связаться через</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
 
 
 

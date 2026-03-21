@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+		<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Title</title>
+	<meta name="description" content="description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- <meta name="viewport" content="width=device-width"> -->
+
+	<link rel="icon" href="images/favicon.png">
+
+	<!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
+
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="preload" href="fonts/Manrope-ExtraLight.woff2" as="font" type="font/woff2" crossorigin="">
+	<link rel="preload" href="fonts/Manrope-Light.woff2" as="font" type="font/woff2" crossorigin="">
+	<link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+	<link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin="">
+	<link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="">
+	<link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+	<link rel="preload" href="fonts/Manrope-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="">
+
+	
+	<link rel="stylesheet" href="libs/normalize.css">
+	<link rel="stylesheet" href="libs/jquery-ui.min.css">
+	<link rel="stylesheet" href="libs/swiper.css">
+	<link rel="stylesheet" href="libs/stories.css">
+	<link rel="stylesheet" href="libs/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.min.css?v=2">
+
+
+</head>
+<body>
+	<header class="header">
+	<div class="header__block">
+		<div class="container">
+			<div class="header__row">
+				<button class="btn menu-button js-open-mobile-menu mobile">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<a href="/" class="resp logo">
+					<img src="images/logo.svg" alt="" width="38" height="38">
+					Супер<span>Номера</span>
+				</a>
+
+				<nav class="nav desktop">
+					<a href="#" data-src="#numbers" class="btn icon-text-button icon-text-button_fire js-open-menu">Красивые номера</a>
+					<a href="#" data-src="#tariffs" class="btn icon-text-button icon-text-button_procent js-open-menu">Выгодные тарифы</a>
+					<ul class="ul nav-list">
+						<li>
+							<a href="#" class="nav-list__link">О компании</a>
+						</li>
+						<li>
+							<a href="#" class="nav-list__link">Блог</a>
+						</li>
+						<li>
+							<a href="#" class="nav-list__link">Отзывы</a>
+						</li>
+						<li>
+							<a href="#" class="nav-list__link">Акции</a>
+						</li>
+					</ul>
+				</nav>
+
+				<ul class="ul header_buttons">
+					<li>
+						<a href="#" class="btn icon-button icon-button_favorite">Перейти в избранное</a>
+					</li>
+					<li>
+						<a href="#" class="btn icon-button icon-button_cart">Перейти в корзину <span>1</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="your-region">
+				<div class="your-region__title">Ваш регион — Москва и область?</div>
+				<div class="row row_12">
+					<div class="col50">
+						<a href="#" class="btn button js-your-region">Да, верно</a>
+					</div>
+					<div class="col50">
+						<a href="#select-region" class="btn light-button popup-with-zoom-anim">Нет, изменить</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-menu">
+		<div class="header-shadow js-close-menu"></div>
+		<div class="container">
+			<div class="header-menu__block" id="numbers">
+				<div class="header-menu__content">
+					<div class="row row_16">
+						<div class="col50">
+							<div class="header-select" style="background-image: url(images/header/0.jpg);">
+								<div class="header-select__title">
+									Выбрать красивый <br>номер
+								</div>
+								<ul class="ul header-select__list">
+									<li><a href="#" class="header-select__link">Красивые номера Билайн</a></li>
+									<li><a href="#" class="header-select__link">Красивые номера МТС</a></li>
+									<li><a href="#" class="header-select__link">Красивые номера Мегафон</a></li>
+									<li><a href="#" class="header-select__link">Красивые номера Yota</a></li>
+									<li><a href="#" class="header-select__link">Красивые номера T2</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col50">
+							<ul class="ul header-advantages">
+								<li class="header-advantages-item" style="background-image: url(images/header/icon/0.svg);">
+									<div class="header-advantages-item__title">
+										Парные номера
+									</div>
+									<div class="header-advantages-item__text">
+										Выберите похожие номера для себя и своих близких
+									</div>
+								</li>
+								<li class="header-advantages-item" style="background-image: url(images/header/icon/0.svg);">
+									<div class="header-advantages-item__title">
+										Доставка и оплата
+									</div>
+									<div class="header-advantages-item__text">
+										Выберите похожие номера для себя и своих близких
+									</div>
+								</li>
+								<li class="header-advantages-item" style="background-image: url(images/header/icon/0.svg);">
+									<div class="header-advantages-item__title">
+										Для бизнеса
+									</div>
+									<div class="header-advantages-item__text">
+										Выберите похожие номера для себя и своих близких
+									</div>
+								</li>
+							</div>
+						</div>
+					</div>
+
+					<a href="#" class="header-banner" style="background-image: url(images/header/banner/0.jpg);">
+						<div class="header-banner__date">
+							до 03.04.2025
+						</div>
+						<div class="header-banner__title">
+							Номера от Мегафон за 99 рублей
+						</div>
+					</a>
+				</div>
+
+
+				<div class="header-menu__block" id="tariffs">
+					<div class="header-menu__content">
+						<div class="row row_16">
+							<div class="col50">
+								<div class="header-select" style="background-image: url(images/header/1.jpg);">
+									<div class="header-select__title">
+										Подберите тариф
+									</div>
+									<ul class="ul header-select__list">
+										<li><a href="#" class="header-select__link">Подберите тариф</a></li>
+										<li><a href="#" class="header-select__link">Тарифы МТС</a></li>
+										<li><a href="#" class="header-select__link">Тарифы Мегафон</a></li>
+										<li><a href="#" class="header-select__link">Тарифы Yota</a></li>
+										<li><a href="#" class="header-select__link">Тарифы T2</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col50">
+								<ul class="ul header-advantages">
+									<li class="header-advantages-item" style="background-image: url(images/header/icon/0.svg);">
+										<div class="header-advantages-item__title">
+											Популярные тарифы
+										</div>
+										<div class="header-advantages-item__text">
+											Выберите похожие номера для себя и своих близких
+										</div>
+									</li>
+									<li class="header-advantages-item" style="background-image: url(images/header/icon/0.svg);">
+										<div class="header-advantages-item__title">
+											Базлимитные
+										</div>
+										<div class="header-advantages-item__text">
+											Выберите похожие номера для себя и своих близких
+										</div>
+									</li>
+									<li class="header-advantages-item" style="background-image: url(images/header/icon/0.svg);">
+										<div class="header-advantages-item__title">
+											Для бизнеса
+										</div>
+										<div class="header-advantages-item__text">
+											Выберите похожие номера для себя и своих близких
+										</div>
+									</li>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="header-banner" style="background-image: url(images/header/banner/1.jpg);">
+							<div class="header-banner__date">
+								до 03.04.2025
+							</div>
+							<div class="header-banner__title">
+								Тарифы от Yota за 199 рублей
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+
+		<section class="collaboration">
+			<div class="collaboration__block" style="--bg-image-desktop: url(../images/collaboration/0.jpg); --bg-image-mobile: url(../images/collaboration/m/0.jpg);">
+				<div class="container mobile">
+					<a href="#" class="btn back-button js-back">Назад</a>
+				</div>
+				<div class="container">
+					<ul class="ul bread desktop">
+						<li>
+							<a href="#" class="bread__link">Главная</a>
+						</li>
+						<li>
+							<a class="bread__link">Сотрудничество</a>
+						</li>
+					</ul>
+					<div class="collaboration__content">
+						<h1 class="section-title">
+							Зарабатывать вместе  с нами <span>легко и просто</span>
+						</h1>
+						<p class="section-text">
+							Мы предлагаем Вам эксклюзивную серию красивых парных номеров от компании со специальной скидкой 20%! Желаете порадовать своих близких, но не знаете какие номера им выбрать — выберите для них красивые парные номера!
+						</p>
+						<a href="#" class="btn button">Начать зарабатывать</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantage">
+			<div class="container">
+				<h2 class="section-title">
+					Партнёрство, приносящее результат 🔥
+				</h2>
+				<p class="section-text">
+					Мы предлагаем чёткие условия, прозрачную систему дохода и поддержку, <br>благодаря которым вы можете развивать свой бизнес уверенно и эффективно.
+				</p>
+				<ul class="ul row">
+					<li class="col33 col100_mobile">
+						<article class="advantage-item" style="--bg-image-desktop: url(../images/advantage/collaboration/0.png); --bg-image-mobile: url(../images/advantage/collaboration/m/0.png);">
+							<div>
+								<h3 class="advantage-item__title">
+									Высокий доход с <br>каждой продажи
+								</h3>
+								<p class="advantage-item__text">
+									Зарабатывайте на подключениях <br>— от сим-карт до безлимитных <br>тарифов.
+								</p>
+							</div>
+						</article>
+					</li>
+					<li class="col33 col100_mobile">
+						<article class="advantage-item" style="--bg-image-desktop: url(../images/advantage/collaboration/1.png); --bg-image-mobile: url(../images/advantage/collaboration/m/1.png);">
+							<div>
+								<h3 class="advantage-item__title">
+									Готовые решения <br>под ключ
+								</h3>
+								<p class="advantage-item__text">
+									SIM-карты, материалы, поддержка <br>— всё для лёгкого старта.
+								</p>
+							</div>
+						</article>
+					</li>
+					<li class="col33 col100_mobile">
+						<article class="advantage-item" style="--bg-image-desktop: url(../images/advantage/collaboration/2.png); --bg-image-mobile: url(../images/advantage/collaboration/m/2.png);">
+							<div>
+								<h3 class="advantage-item__title">
+									Быстрый старт без <br>лишней бюрократии
+								</h3>
+								<p class="advantage-item__text">
+									Подключаем за 1 день. <br>Без сложных договоров и лишних <br>формальностей.
+								</p>
+							</div>
+						</article>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="cooperation">
+			<div class="container">
+
+				<div class="cooperation__slider">
+					<div class="swiper js-cooperation-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="cooperation-item" style="--bg-image-desktop: url(../images/cooperation/0.jpg); --bg-image-mobile: url(../images/cooperation/m/0.jpg);">
+									<div class="cooperation-item__content">
+										<h2 class="section-title">
+											Зарабатывайте на мобильной связи
+										</h2>
+										<p class="cooperation-item__text">
+											Сотовая связь — это высокодоходный и динамично развивающийся бизнес. Хотите получать прибыль наравне с операторами? Станьте партнером и мы поможем вам войти в этот рынок!
+										</p>
+										<a href="#" class="btn button">
+											Стать партнёром
+										</a>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="benefits">
+	<div class="container">
+		<h2 class="section-title">
+			<span>Больше,</span> чем просто цифры
+		</h2>
+		<div class="row">
+			<div class="col66 col100_mobile">
+				<ul class="ul row">
+					<li class="col50 col100_mobile">
+						<article class="benefits-item" style="background-image: url(../images/benefits/0.svg);">
+							<h3>Подчеркивает статус</h3>
+							<p>Красивый номер выделит вас и подчеркнёт ваш престиж.</p>
+						</article>
+					</li>
+					<li class="col50 col100_mobile">
+						<article class="benefits-item" style="background-image: url(../images/benefits/1.svg);">
+							<h3>Легко запоминается</h3>
+							<p>Номер лёгкий для восприятия — он однозначно останется в памяти.</p>
+						</article>
+					</li>
+					<li class="col50 col100_mobile">
+						<article class="benefits-item" style="background-image: url(../images/benefits/2.svg);">
+							<h3>Защищает от мошенников</h3>
+							<p>Безопасность, спокойствие и меньший риск утраты номера.</p>
+						</article>
+					</li>
+					<li class="col50 col100_mobile">
+						<article class="benefits-item" style="background-image: url(../images/benefits/3.svg);">
+							<h3>Растущая ценность</h3>
+							<p>Ценная инвестиция, которая со временем только прибавляет в цене.</p>
+						</article>
+					</li>
+				</ul>
+			</div>
+			<div class="col33 col100_mobile">
+				<article class="benefits-main">
+					<h3>
+						Доверие для бизнеса
+					</h3>
+					<p>
+						Вызывает уважение и повышает лояльность клиентов.
+					</p>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+
+		<section class="insta-gallery reviews">
+			<div class="container">
+				<div class="section-top">
+					<h2 class="section-title">
+						Что говорят наши партнёры ⭐
+					</h2>
+					<div class="reviews__nav desktop">
+						<div class="swiper-prev insta-gallery__prev" aria-label="Переключить карусель назад"></div>
+						<div class="swiper-next insta-gallery__next" aria-label="Переключить карусель вперёд"></div>
+					</div>
+				</div>
+
+
+				<div class="insta-gallery__slider">
+
+					<div class="insta-gallery__swiper swiper">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<div class="reviews-item">
+									<div class="reviews-item__user">
+										<div class="resp reviews-item__img">
+											<img src="images/reviews/user.jpg" alt="">
+										</div>
+										<div class="reviews-item__name">Магомед</div>
+										<div class="reviews-item__date">
+											28 февраля 2025
+										</div>
+									</div>
+									<div class="reviews-item__stars">
+										<!-- Процент 100% все заполнены, 0 все серые -->
+										<span style="width: 80%;"></span>
+									</div>
+									<div class="reviews-item__text">
+										Работал дилером в этой компании когда они еще только начинали на Китай городе.  Были хорошие моменты с 2009 года когда поднимали комиссию до 150'000. 
+										Желаю успехов всем сотрудникам этой компании. Думаю старых дилеров,  заменили новые!)))
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide swiper-slide_video play-icon" data-video="images/reviews/0.mp4">
+								<div class="resp reviews-video insta-gallery__preview">
+									<img src="images/reviews/0.jpg" alt="" width="360" height="560" loading="lazy">
+								</div>
+								<div class="reviews-item__user">
+									<div class="resp reviews-item__img">
+										<img src="images/reviews/user.jpg" alt="">
+									</div>
+									<div class="reviews-item__name">Магомед</div>
+									<div class="reviews-item__date">
+										28 февраля 2025
+									</div>
+								</div>
+								<div class="reviews-item__stars">
+									<!-- Процент 100% все заполнены, 0 все серые -->
+									<span style="width: 80%;"></span>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="reviews-item">
+									<div class="reviews-item__user">
+										<div class="resp reviews-item__img">
+											<img src="images/reviews/user.jpg" alt="">
+										</div>
+										<div class="reviews-item__name">Магомед</div>
+										<div class="reviews-item__date">
+											28 февраля 2025
+										</div>
+									</div>
+									<div class="reviews-item__stars">
+										<!-- Процент 100% все заполнены, 0 все серые -->
+										<span style="width: 80%;"></span>
+									</div>
+									<div class="reviews-item__text">
+										Работал дилером в этой компании когда они еще только начинали на Китай городе.  Были хорошие моменты с 2009 года когда поднимали комиссию до 150'000. 
+										Желаю успехов всем сотрудникам этой компании. Думаю старых дилеров,  заменили новые!)))
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="reviews-item">
+									<div class="reviews-item__user">
+										<div class="resp reviews-item__img">
+											<img src="images/reviews/user.jpg" alt="">
+										</div>
+										<div class="reviews-item__name">Магомед</div>
+										<div class="reviews-item__date">
+											28 февраля 2025
+										</div>
+									</div>
+									<div class="reviews-item__stars">
+										<!-- Процент 100% все заполнены, 0 все серые -->
+										<span style="width: 80%;"></span>
+									</div>
+									<div class="reviews-item__text">
+										Добрый день. Еще раз хотелось выразить слова благодарности компании. Мой номер долгое время был заблокирован, думала уже потеряла его. Но оказалось, что все вопросы решаемы.  Сотрудники восстановили мой номер и за это я безумно благодарна команде профессионалов. Буду обращаться повторно!🎉
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide swiper-slide_video play-icon" data-video="images/reviews/0.mp4">
+								<div class="resp reviews-video insta-gallery__preview">
+									<img src="images/reviews/0.jpg" alt="" width="360" height="560" loading="lazy">
+								</div>
+								<div class="reviews-item__user">
+									<div class="resp reviews-item__img">
+										<img src="images/reviews/user.jpg" alt="">
+									</div>
+									<div class="reviews-item__name">Магомед</div>
+									<div class="reviews-item__date">
+										28 февраля 2025
+									</div>
+								</div>
+								<div class="reviews-item__stars">
+									<!-- Процент 100% все заполнены, 0 все серые -->
+									<span style="width: 80%;"></span>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="reviews-item">
+									<div class="reviews-item__user">
+										<div class="resp reviews-item__img">
+											<img src="images/reviews/user.jpg" alt="">
+										</div>
+										<div class="reviews-item__name">Магомед</div>
+										<div class="reviews-item__date">
+											28 февраля 2025
+										</div>
+									</div>
+									<div class="reviews-item__stars">
+										<!-- Процент 100% все заполнены, 0 все серые -->
+										<span style="width: 80%;"></span>
+									</div>
+									<div class="reviews-item__text">
+										Работал дилером в этой компании когда они еще только начинали на Китай городе.  Были хорошие моменты с 2009 года когда поднимали комиссию до 150'000. 
+										Желаю успехов всем сотрудникам этой компании. Думаю старых дилеров,  заменили новые!)))
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="reviews-item">
+									<div class="reviews-item__user">
+										<div class="resp reviews-item__img">
+											<img src="images/reviews/user.jpg" alt="">
+										</div>
+										<div class="reviews-item__name">Магомед</div>
+										<div class="reviews-item__date">
+											28 февраля 2025
+										</div>
+									</div>
+									<div class="reviews-item__stars">
+										<!-- Процент 100% все заполнены, 0 все серые -->
+										<span style="width: 80%;"></span>
+									</div>
+									<div class="reviews-item__text">
+										Добрый день. Еще раз хотелось выразить слова благодарности компании. Мой номер долгое время был заблокирован, думала уже потеряла его. Но оказалось, что все вопросы решаемы.  Сотрудники восстановили мой номер и за это я безумно благодарна команде профессионалов. Буду обращаться повторно!🎉
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			<div class="insta-gallery-full" style="display: none">
+				<div class="insta-gallery-full__close">
+					<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.5001 11.9143L19.293 20.7072L20.7072 19.293L11.9143 10.5001L20.7073 1.70718L19.2931 0.292969L10.5001 9.08591L1.70718 0.292969L0.292969 1.70718L9.08591 10.5001L0.29306 19.293L1.70728 20.7072L10.5001 11.9143Z"
+						fill="white"/>
+						<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M10.5001 11.9143L19.293 20.7072L20.7072 19.293L11.9143 10.5001L20.7073 1.70718L19.2931 0.292969L10.5001 9.08591L1.70718 0.292969L0.292969 1.70718L9.08591 10.5001L0.29306 19.293L1.70728 20.7072L10.5001 11.9143Z"
+						fill="white"/>
+					</svg>
+				</div>
+
+				<div class="insta-gallery-full__volume-button">
+					<svg width="31" height="18" viewBox="0 0 31 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M12 0L7 4H0V14H7L12 18V0ZM29.2929 2.29289L24.5 7.08579L19.7071 2.29289L18.2929 3.70711L23.0858 8.5L18.2929 13.2929L19.7071 14.7071L24.5 9.91421L29.2929 14.7071L30.7071 13.2929L25.9142 8.5L30.7071 3.70711L29.2929 2.29289Z"
+						fill="white"/>
+					</svg>
+					<svg width="31" height="18" viewBox="0 0 31 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M12 0L7 4H0V14H7L12 18V0ZM22 2C25.866 2 29 5.13401 29 9C29 12.866 25.866 16 22 16H18V18H22C26.9706 18 31 13.9706 31 9C31 4.02944 26.9706 0 22 0H18V2H22ZM25 9C25 7.34315 23.6569 6 22 6H18V4H22C24.7614 4 27 6.23858 27 9C27 11.7614 24.7614 14 22 14H18V12H22C23.6569 12 25 10.6569 25 9Z"
+						fill="white"/>
+					</svg>
+				</div>
+
+				<div class="insta-gallery-full__container">
+					<div class="insta-gallery-full__slider">
+						<div class="insta-gallery-full__navigation">
+							<div class="insta-gallery-full__navigation-line">
+								<div class="insta-gallery-full__navigation-line-progress"></div>
+							</div>
+							<div class="insta-gallery-full__navigation-line">
+								<div class="insta-gallery-full__navigation-line-progress"></div>
+							</div>
+							<div class="insta-gallery-full__navigation-line">
+								<div class="insta-gallery-full__navigation-line-progress"></div>
+							</div>
+						</div>
+						<div class="insta-gallery-full__swiper swiper">
+							<div class="swiper-wrapper">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section answers">
+	<div class="container">
+		<h2 class="section-title">
+			Всё, что <span>вы хотели</span> спросить
+		</h2>
+		<div class="row">
+			<div class="col66 col100_mobile">
+				<div class="accordeon js_accordeon">
+					<article class="accordeon__item">
+						<h3 class="accordeon__title">
+							Как сменить владельца номера?
+						</h3>
+						<div class="accordeon__text">
+							Чтобы переоформить номер на другого человека внутри компании «Агентство Связи», нужно, чтобы оба пришли в наш офис с паспортами. Если владелец номера не может присутствовать, потребуется доверенность, заверенная нотариусом.
+							Для дистанционного переоформления отправьте запрос на help@k7.ru.
+							Переоформление номера внутри компании — бесплатно
+						</div>
+					</article>
+					<article class="accordeon__item">
+						<h3 class="accordeon__title">
+							Можно ли перейти в «‎Супер номера» со своим номером?
+						</h3>
+						<div class="accordeon__text">
+							Чтобы переоформить номер на другого человека внутри компании «Агентство Связи», нужно, чтобы оба пришли в наш офис с паспортами. Если владелец номера не может присутствовать, потребуется доверенность, заверенная нотариусом.
+							Для дистанционного переоформления отправьте запрос на help@k7.ru.
+							Переоформление номера внутри компании — бесплатно
+						</div>
+					</article>
+					<article class="accordeon__item">
+						<h3 class="accordeon__title">
+							При оплате ошибочно указал чужой номер, что делать?
+						</h3>
+						<div class="accordeon__text">
+							Чтобы переоформить номер на другого человека внутри компании «Агентство Связи», нужно, чтобы оба пришли в наш офис с паспортами. Если владелец номера не может присутствовать, потребуется доверенность, заверенная нотариусом.
+							Для дистанционного переоформления отправьте запрос на help@k7.ru.
+							Переоформление номера внутри компании — бесплатно
+						</div>
+					</article>
+					<article class="accordeon__item">
+						<h3 class="accordeon__title">
+							Как оплатить номер с банковской карты?
+						</h3>
+						<div class="accordeon__text">
+							Чтобы переоформить номер на другого человека внутри компании «Агентство Связи», нужно, чтобы оба пришли в наш офис с паспортами. Если владелец номера не может присутствовать, потребуется доверенность, заверенная нотариусом.
+							Для дистанционного переоформления отправьте запрос на help@k7.ru.
+							Переоформление номера внутри компании — бесплатно
+						</div>
+					</article>
+					<article class="accordeon__item">
+						<h3 class="accordeon__title">
+							Как управлять номером и услугами?
+
+						</h3>
+						<div class="accordeon__text">
+							Чтобы переоформить номер на другого человека внутри компании «Агентство Связи», нужно, чтобы оба пришли в наш офис с паспортами. Если владелец номера не может присутствовать, потребуется доверенность, заверенная нотариусом.
+							Для дистанционного переоформления отправьте запрос на help@k7.ru.
+							Переоформление номера внутри компании — бесплатно
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="col33 col100_mobile">
+				<div class="answers-contact">
+					<h3 class="answers-contact__title">
+						Остались вопросы?
+					</h3>
+					<p class="answers-contact__text">
+						С удовольствием на них ответим с 9:00-20:00.
+					</p>
+					<div class="answers-contact__bottom">
+						<a href="#" class="btn button">Заказать звонок</a>
+						<ul class="ul answers-soc">
+							<li>
+								<a href="#" class="answers-soc__link answers-soc__link_tl">Связаться через </a>
+							</li>
+							<li>
+								<a href="#" class="answers-soc__link answers-soc__link_wh">Связаться через</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+		<section class="collaboration-how">
+			<div class="container">
+				<div class="how-form">
+					<form>
+						<div class="how-form__block">
+							<h2 class="section-title">
+								Присоединяйтесь <br>к партнёрской программе
+							</h2>
+							<p class="section-text">
+								Заполните форму и мы расскажем как начать сотрудничество.
+							</p>
+							<div class="row row_12">
+								<div class="col36 col100_mobile">
+									<div class="form-group form-group_light">
+										<input type="text" placeholder="Ваше имя">
+									</div>
+								</div>
+								<div class="col36 col100_mobile">
+									<div class="form-group form-group_light">
+										<input type="tel" placeholder="+7 ___ ___ __ __" data-mask>
+									</div>
+								</div>
+								<div class="col28 col100_mobile">
+									<button class="btn button button_white">Отправить заявку</button>
+								</div>
+							</div>
+							<p class="form-text">
+								Нажимая на кнопку, Вы соглашаетесь с правилами <a href="#">Политики Конфиденциальности</a>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+
+<footer class="section footer">
+	<div class="container">
+		<div class="row">
+			<div class="col25 col100_mobile">
+				<div class="footer__left">
+					<a href="/" class="resp logo">
+						<img src="images/logo.svg" alt="" width="38" height="38">
+						Супер<span>Номера</span>
+					</a>
+					<div class="footer__city">
+						Москва и область
+					</div>
+					<div class="phone">
+						<a href="tel:">+7 (495) 663-63-63</a>
+						<div>Пн-Пт, 09:00 - 20:00</div>
+					</div>
+					<ul class="ul soc">
+						<li>
+							<a href="#" class="soc__link soc__link_vk" target="_blank" rel="nofollow">Посетить </a>
+						</li>
+						<li>
+							<a href="#" class="soc__link soc__link_tl" target="_blank" rel="nofollow">Посетить </a>
+						</li>
+						<li>
+							<a href="#" class="soc__link soc__link_wh" target="_blank" rel="nofollow">Посетить </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col50 col100_mobile">
+				<div class="footer-nav">
+					<div class="footer-nav__item">
+						<div class="footer-nav__title">
+							Номера
+						</div>
+						<ul class="ul">
+							<li>
+								<a href="#">
+									Красивые номера
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Аренда номеров
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Продать номер
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Акции
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nav__item">
+						<div class="footer-nav__title">
+							Операторы
+						</div>
+						<ul class="ul">
+							<li>
+								<a href="#">
+									Магафон
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Йота
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Билайн
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									МТС
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Теле2
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nav__item">
+						<div class="footer-nav__title">
+							Клиентам
+						</div>
+						<ul class="ul">
+							<li>
+								<a href="#">
+									Юр.лицам
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Доставка и оплата
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									О компании
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Сотрудничество
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Контакты	
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Новости
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col25 col100_mobile">
+				<div class="callback">
+					<div class="callback__title">
+						Обратный звонок
+					</div>
+					<form>
+						<div class="form-group">
+							<input type="text" placeholder="Ваше имя">
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="+7___ ___ __ __" data-mask>
+						</div>
+						<button class="btn button">Заказать звонок</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__bottom">
+			<div class="copy">
+				© OOO «Супер Номера» 2025
+			</div>
+			<a href="#" class="footer__link">
+				Политика конфиденциальности
+			</a>
+			<div class="developer">
+				Сайт сделан в студии <a href="https://twofingers.ru/">«ТуФингерс»</a> <sup>2025</sup>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="warning">
+	Продажа и активация SIM-карт и тарифов с саморегистрацией осуществляется строго по паспорту, лицам достигшим 18 лет, в соответствии с <a href="#">Федеральным Законом «О связи» 126-ФЗ.</a>
+</div>
+
+<div class="cookie">
+	<p>
+		Оставаясь на сайте, вы соглашаетесь c <a href="#">политикой использования файлов cookie</a>
+	</p>
+	<button class="btn button js-cookie">
+		Хорошо
+	</button>
+</div>
+
+<div class="menu__shadow js-close-mobile-menu">
+	<div class="menu">
+		<button class="btn close-button js-close-mobile-menu">Закрыть мобильное меню</button>
+
+		<div class="menu__scroll">
+			<div class="menu-top">
+				<a href="#" class="btn icon-text-button icon-text-button_fire">Красивые номера</a>
+
+				<ul class="ul menu-list">
+					<li class="menu-list__li_sub js-sub-menu">
+						<a href="#" class="menu-list__link">Выбрать красивый номер</a> <span></span>
+						<ul class="ul sub-menu-list">
+							<li><a href="#" class="sub-menu-list__link">Красивые номера Билайн</a></li>
+							<li><a href="#" class="sub-menu-list__link">Красивые номера МТС</a></li>
+							<li><a href="#" class="sub-menu-list__link">Красивые номера Мегафон</a></li>
+							<li><a href="#" class="sub-menu-list__link">Красивые номера Yota</a></li>
+							<li><a href="#" class="sub-menu-list__link">Красивые номера T2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="menu-list__link">Парные номера</a>
+					</li>
+					<li>
+						<a href="#" class="menu-list__link">Доставка и оплата</a>
+					</li>
+					<li>
+						<a href="#" class="menu-list__link">Для бизнеса</a>
+					</li>
+				</ul>
+
+				<a href="#" class="btn icon-text-button icon-text-button_procent">Выгодные тарифы</a>
+
+				<ul class="ul menu-list">
+					<li class="menu-list__li_sub js-sub-menu">
+						<a href="#" class="menu-list__link">Подберите тариф</a> <span></span>
+						<ul class="ul sub-menu-list">
+							<li><a href="#" class="sub-menu-list__link">Тарифы Билайн</a></li>
+							<li><a href="#" class="sub-menu-list__link">Тарифы МТС</a></li>
+							<li><a href="#" class="sub-menu-list__link">Тарифы Мегафон</a></li>
+							<li><a href="#" class="sub-menu-list__link">Тарифы Yota</a></li>
+							<li><a href="#" class="sub-menu-list__link">Тарифы T2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="menu-list__link">Популярные тарифы</a>
+					</li>
+					<li>
+						<a href="#" class="menu-list__link">Базлимитные</a>
+					</li>
+					<li>
+						<a href="#" class="menu-list__link">Для бизнеса</a>
+					</li>
+				</ul>
+
+				<ul class="ul menu-nav">
+					<li>
+						<a href="#" class="menu-nav__link">О компании</a>
+					</li>
+					<li>
+						<a href="#" class="menu-nav__link">Блог</a>
+					</li>
+					<li>
+						<a href="#" class="menu-nav__link">Отзывы</a>
+					</li>
+					<li>
+						<a href="#" class="menu-nav__link">Акции</a>
+					</li>
+				</ul>
+
+			</div>
+
+			<div class="menu-contacts">
+				<div class="menu-contacts__address">
+					Москва и Московская область
+				</div>
+				<div class="menu-contacts__phone">
+					<a href="tel:">+7 (495) 663-63-63</a> <br>
+					Пн-Пт, 09:00 - 20:00
+				</div>
+				<div class="row row_12">
+					<div class="col50">
+						<a href="#" rel="nofollow" target="_blank" class="btn soc-button soc-button_tl">Telegram</a>
+					</div>
+					<div class="col50">
+						<a href="#" rel="nofollow" target="_blank" class="btn soc-button soc-button_wh">Whatsapp</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="libs/jquery-3.7.1.min.js"></script>
+<script src="libs/jquery-ui.min.js"></script>
+<script src="libs/swiper.js"></script>
+<script src="libs/stories.js"></script>
+<script src="libs/jquery.mask.min.js"></script>
+<script src="libs/jquery.magnific-popup.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
