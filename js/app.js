@@ -565,97 +565,13 @@ $('.js-search').keyup(function(){
 });
 
 
-
-
-//const popUpElement = document.getElementById("pop-up");
-
-
-
-
- // $(document).on("click","11111111111111", function (e) {
- //   e.preventDefault();
- //  })
-
-
-
-
-
-   //  /*----------------------Добавить и убавить-------------------------------------------*/
-   // function changeQuantity($parentElement,$event = 'plus'){
-   //    const $input = $parentElement.find('.js_input');
-   //    let $count;
-   //    if($event == 'minus'){
-   //       $count = parseInt($input.val()) - 1;
-   //       $count = $count < 1 ? 1 : $count;
-   //    }
-   //    if($event == 'plus'){
-   //       $count = parseInt($input.val()) + 1;
-   //    }
-   //    $input.val($count);
-   //    $input.change();
-   //    $parentElement.find('.js_minus').prop("disabled",$count == 1);
-   // }
-
-   // $(document).on('click','.js_minus',function(e){
-   //    e.preventDefault();
-   //    changeQuantity($(this).parent(), 'minus');
-   // });
-   // $(document).on('click','.js_plus',function(e){
-   //    e.preventDefault();
-   //    changeQuantity($(this).parent());
-   // });
-
-   // $('.js_input').blur(function () {
-   //    const $ths = $(this),
-   //       $val = $ths.val();
-   //    if ($val == "") {
-   //       $ths.val("1");
-   //    }
-   //    $ths.parent().find('.js_minus').prop("disabled", parseInt($val) < 2 || $val == "");
-   // });
-   //  // input only number
-   // $('.js_input').bind("change keyup input click", function () {
-   //    const $ths = $(this);
-   //    $ths.val($ths.val().replace(/[^\d]/, ""));
-   // });
-
-
-
-// 	$(document).mouseup(function (e){ 
-// 		var div = $(".questions_text");
-// 		if (!div.is(e.target)
-// 			&& div.has(e.target).length === 0) {
-// 			div.fadeOut(150); 
-// 		$('.questions_text').fadeOut(150);
-// 	}
-// });
-// 	$(document).keyup(function(e) {
-// 		if (e.keyCode == 27) {
-// 			$('.questions_text').fadeOut(150);
-// 		}
-// 	});
-
-
-
-
-
-
-
-
-// Отфильтровывание списка по вводу в инпут
-// $('.CmMSelectSearch input').keyup(function(){
-//         var $ths = $(this);
-//         var val_inp = $ths.val();
-
-//         $ths.parent().next().find('.CmColorBgh').each(function(){
-//             var val_title = $(this).text();
-//             if (RegExp('\^'+val_inp,'i').test(val_title)||RegExp('\\s\\'+val_inp,'i').test(val_title)) {
-//                 $(this).show();
-//             }else{
-//                 $(this).hide();
-//             }
-//         });
-//     });
+/*------------------------Скрипт табов--------------------------------------*/
+$(document).on("change",".js-tab-buttons input", function (e) {
+ e.preventDefault();
+ const $ths = $(this);
+ const $parent = $ths.parents('.js-tab-parent');
+ $parent.find('.js-tab-items>div').hide().eq($ths.parent().parent().index()).fadeIn();
+})
 
 
 })

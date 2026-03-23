@@ -35,8 +35,25 @@
 
 
 </head>
-<body class="new-page">
-	<header class="header">
+<body class="cart-page">
+	<div class="desktop">
+		<header class="cart-header">
+	<div class="container">
+		<div class="cart-header__row">
+			<a href="#" class="btn back-button js-back">Вернуться назад</a>
+
+			<a href="/" class="resp logo">
+				<img src="images/logo.svg" alt="" width="38" height="38">
+				Супер<span>Номера</span>
+			</a>
+
+			<a href="#" class="btn light-button">Заказать через менеджера</a>
+		</div>
+	</div>
+</header>
+	</div>
+	<div class="mobile">
+		<header class="header">
 	<div class="header__block">
 		<div class="container">
 			<div class="header__row">
@@ -213,349 +230,299 @@
 			</div>
 		</div>
 	</header>
+	</div>
 	<main>
 
-		<section class="new">
-			<div class="container">
+		<section class="favorites">
+			<div class="container js-tab-parent">
 				<div class="mobile">
 					<a href="#" class="btn back-button js-back">Назад</a>
 				</div>
-				<ul class="ul bread desktop">
-					<li>
-						<a href="#" class="bread__link">Главная</a>
-					</li>
-					<li>
-						<a href="#" class="bread__link">Новости</a>
-					</li>
-					<li>
-						<a class="bread__link">Страница новости</a>
-					</li>
-				</ul>
 				<h1 class="section-title">
-					Госдума планирует ужесточить условия оплаты мобильной связи
+					Избранное
 				</h1>
-				<ul class="ul new__info">
-					<li>
-						<a href="#">Мобильная связь</a>
-					</li>
-					<li>
-						09 апр 2025
-					</li>
-				</ul>
-				<div class="row">
-					<div class="col66 col100_mobile">
-						<div class="content-text">
-							<p>
-								Предложение Минцифры ужесточить правила оплаты мобильной связи и продажи сим-карт поможет в борьбе с мошенничеством. Такое мнение высказал зампред комитета Госдумы по информационной политике, информационным технологиям и связи Андрей Свинцов.
-							</p>
-							<p>
-								Он поддержал введение дополнительных мер против правонарушений в этой области, отметив, что при существующих законодательных нормах «все равно продолжаются бесконечные мошеннические и спам-звонки».
-							</p>
-							<img src="images/informed/3.jpg" alt="">
-							<h2>
-								Что может измениться
-							</h2>
-							<p>
-								По словам чиновников, предполагаемые изменения затронут прежде всего порядок анонимной покупки сим-карт и использование предоплаченных тарифов. Планируется ужесточить требования к идентификации пользователей при оплате мобильных услуг — даже при пополнении баланса наличными.
-							</p>
-							<p>
-								Также рассматриваются следующие меры:
-							</p>
-							<ul>
+				<div class="favorites__block">
+					<ul class="ul checkbox-buttons js-tab-buttons">
+						<li>
+							<label class="button-radio">
+								<input type="radio" name="type" checked="">
+								<span>Номера</span>
+							</label>
+						</li>
+						<li>
+							<label class="button-radio">
+								<input type="radio" name="type">
+								<span>Тарифы</span>
+							</label>
+						</li>
+					</ul>
+					<div class="favorites__items js-tab-items">
+						<div class="favorites__item">
+							<ul class="ul find__list">
 								<li>
-									введение лимитов на суммы пополнения без подтверждённой идентификации;
+									<div class="find-item" style="background-image: url(images/find/0.png);">
+										<div class="find-item__num">
+											+7 967 325 <span>11</span> <span>11</span>
+										</div>
+										<div class="find-item__right">
+											<div class="find-item__text">12 000 ₽</div>
+											<div class="find-item__text">от 1 250 ₽/мес</div>
+											<button class="btn light-button">Купить</button>
+											<button class="btn favorite-button">Добавить в избранное</button>
+										</div>
+									</div>
 								</li>
 								<li>
-									обязательная проверка данных при покупке сим-карт через онлайн-магазины;
+									<div class="find-item" style="background-image: url(images/find/1.png);">
+										<div class="find-item__num">
+											+7 967 325 <span>11</span> <span>11</span>
+										</div>
+										<div class="find-item__right">
+											<div class="find-item__text">12 000 ₽</div>
+											<div class="find-item__text">от 1 250 ₽/мес</div>
+											<button class="btn light-button">Купить</button>
+											<button class="btn favorite-button">Добавить в избранное</button>
+										</div>
+									</div>
 								</li>
 								<li>
-									усиление ответственности операторов связи за нарушения в сфере идентификации абонентов;
+									<div class="find-item" style="background-image: url(images/find/2.png);">
+										<div class="find-item__num">
+											+7 967 325 <span>11</span> <span>11</span>
+										</div>
+										<div class="find-item__right">
+											<div class="find-item__text">12 000 ₽</div>
+											<div class="find-item__text">от 1 250 ₽/мес</div>
+											<button class="btn light-button">Купить</button>
+											<button class="btn favorite-button">Добавить в избранное</button>
+										</div>
+									</div>
 								</li>
 								<li>
-									создание единой базы данных активированных сим-карт с привязкой к паспортным данным.
+									<div class="find-item" style="background-image: url(images/find/3.png);">
+										<div class="find-item__num">
+											+7 967 325 <span>11</span> <span>11</span>
+										</div>
+										<div class="find-item__right">
+											<div class="find-item__text">12 000 ₽</div>
+											<div class="find-item__text">от 1 250 ₽/мес</div>
+											<button class="btn light-button">Купить</button>
+											<button class="btn favorite-button">Добавить в избранное</button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="find-item" style="background-image: url(images/find/4.png);">
+										<div class="find-item__num">
+											+7 967 325 <span>11</span> <span>11</span>
+										</div>
+										<div class="find-item__right">
+											<div class="find-item__text">12 000 ₽</div>
+											<div class="find-item__text">от 1 250 ₽/мес</div>
+											<button class="btn light-button">Купить</button>
+											<button class="btn favorite-button">Добавить в избранное</button>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<img src="images/informed/3.jpg" alt="">
-							<p>
-								По мнению экспертов, такие меры помогут снизить уровень телефонного мошенничества, который остаётся стабильно высоким. Однако представители отрасли уже выразили опасения, что чрезмерное регулирование может создать неудобства для добросовестных пользователей.
-							</p>
-							<h2>
-								Что может измениться
-							</h2>
-							<p>
-								По словам чиновников, предполагаемые изменения затронут прежде всего порядок анонимной покупки сим-карт и использование предоплаченных тарифов. Планируется ужесточить требования к идентификации пользователей при оплате мобильных услуг — даже при пополнении баланса наличными.
-							</p>
-							<p>
-								По словам чиновников, предполагаемые изменения затронут прежде всего порядок анонимной покупки сим-карт и использование предоплаченных тарифов. Планируется ужесточить требования к идентификации пользователей при оплате мобильных услуг — даже при пополнении баланса наличными.
-							</p>
-							<ul>
-								<li>
-									введение лимитов на суммы пополнения без подтверждённой идентификации;
+						</div>
+						<div class="favorites__item favorites__tariffs">
+							<ul class="ul row">
+								<li class="col33 col100_mobile">
+									<article class="tariffs-item">
+										<h3 class="tariffs-item__title" style="background-image: url(../images/find/3.png);">
+											Тариф Yota
+											<strong>На связи</strong>
+										</h3>
+										<ul class="ul tariffs-item__info">
+											<li>35 гб</li>
+											<li>500 мин</li>
+										</ul>
+										<div class="tariffs-unlimited">
+											<div class="tariffs-unlimited__title">
+												Безлимит <span class="desktop">на соц.сети</span>
+											</div>
+											<ul class="ul tariffs-unlimited__list">
+												<li class="tariffs-unlimited_whatsapp"></li>
+												<li class="tariffs-unlimited_viber"></li>
+												<li class="tariffs-unlimited_telegram"></li>
+												<li class="tariffs-unlimited_vk"></li>
+												<li class="tariffs-unlimited_ok"></li>
+											</ul>
+										</div>
+										<div class="tariffs-item__price">
+											250 ₽ <span>250 ₽ </span>
+										</div>
+										<div class="tariffs-item__buttons">
+											<a href="#" class="btn button">Подключить</a>
+											<a href="#" class="btn light-button">Подробнее</a>
+										</div>
+									</article>
 								</li>
-								<li>
-									обязательная проверка данных при покупке сим-карт через онлайн-магазины;
+								<li class="col33 col100_mobile">
+									<article class="tariffs-item">
+										<h3 class="tariffs-item__title" style="background-image: url(../images/find/3.png);">
+											Тариф Yota
+											<strong>На связи</strong>
+										</h3>
+										<ul class="ul tariffs-item__info">
+											<li>35 гб</li>
+											<li>500 мин</li>
+										</ul>
+										<div class="tariffs-unlimited">
+											<div class="tariffs-unlimited__title">
+												Безлимит <span class="desktop">на соц.сети</span>
+											</div>
+											<ul class="ul tariffs-unlimited__list">
+												<li class="tariffs-unlimited_whatsapp"></li>
+												<li class="tariffs-unlimited_viber"></li>
+												<li class="tariffs-unlimited_telegram"></li>
+												<li class="tariffs-unlimited_vk"></li>
+												<li class="tariffs-unlimited_ok"></li>
+											</ul>
+										</div>
+										<div class="tariffs-item__price">
+											250 ₽ <span>250 ₽ </span>
+										</div>
+										<div class="tariffs-item__buttons">
+											<a href="#" class="btn button">Подключить</a>
+											<a href="#" class="btn light-button">Подробнее</a>
+										</div>
+									</article>
 								</li>
-								<li>
-									усиление ответственности операторов связи за нарушения в сфере идентификации абонентов;
+								<li class="col33 col100_mobile">
+									<article class="tariffs-item">
+										<h3 class="tariffs-item__title" style="background-image: url(../images/find/3.png);">
+											Тариф Yota
+											<strong>На связи</strong>
+										</h3>
+										<ul class="ul tariffs-item__info">
+											<li>35 гб</li>
+											<li>500 мин</li>
+										</ul>
+										<div class="tariffs-unlimited">
+											<div class="tariffs-unlimited__title">
+												Безлимит <span class="desktop">на соц.сети</span>
+											</div>
+											<ul class="ul tariffs-unlimited__list">
+												<li class="tariffs-unlimited_whatsapp"></li>
+												<li class="tariffs-unlimited_viber"></li>
+												<li class="tariffs-unlimited_telegram"></li>
+												<li class="tariffs-unlimited_vk"></li>
+												<li class="tariffs-unlimited_ok"></li>
+											</ul>
+										</div>
+										<div class="tariffs-item__price">
+											250 ₽ <span>250 ₽ </span>
+										</div>
+										<div class="tariffs-item__buttons">
+											<a href="#" class="btn button">Подключить</a>
+											<a href="#" class="btn light-button">Подробнее</a>
+										</div>
+									</article>
 								</li>
-								<li>
-									создание единой базы данных активированных сим-карт с привязкой к паспортным данным.
+								<li class="col33 col100_mobile">
+									<article class="tariffs-item">
+										<h3 class="tariffs-item__title" style="background-image: url(../images/find/3.png);">
+											Тариф Yota
+											<strong>На связи</strong>
+										</h3>
+										<ul class="ul tariffs-item__info">
+											<li>35 гб</li>
+											<li>500 мин</li>
+										</ul>
+										<div class="tariffs-unlimited">
+											<div class="tariffs-unlimited__title">
+												Безлимит <span class="desktop">на соц.сети</span>
+											</div>
+											<ul class="ul tariffs-unlimited__list">
+												<li class="tariffs-unlimited_whatsapp"></li>
+												<li class="tariffs-unlimited_viber"></li>
+												<li class="tariffs-unlimited_telegram"></li>
+												<li class="tariffs-unlimited_vk"></li>
+												<li class="tariffs-unlimited_ok"></li>
+											</ul>
+										</div>
+										<div class="tariffs-item__price">
+											250 ₽ <span>250 ₽ </span>
+										</div>
+										<div class="tariffs-item__buttons">
+											<a href="#" class="btn button">Подключить</a>
+											<a href="#" class="btn light-button">Подробнее</a>
+										</div>
+									</article>
+								</li>
+								<li class="col33 col100_mobile">
+									<article class="tariffs-item">
+										<h3 class="tariffs-item__title" style="background-image: url(../images/find/3.png);">
+											Тариф Yota
+											<strong>На связи</strong>
+										</h3>
+										<ul class="ul tariffs-item__info">
+											<li>35 гб</li>
+											<li>500 мин</li>
+										</ul>
+										<div class="tariffs-unlimited">
+											<div class="tariffs-unlimited__title">
+												Безлимит <span class="desktop">на соц.сети</span>
+											</div>
+											<ul class="ul tariffs-unlimited__list">
+												<li class="tariffs-unlimited_whatsapp"></li>
+												<li class="tariffs-unlimited_viber"></li>
+												<li class="tariffs-unlimited_telegram"></li>
+												<li class="tariffs-unlimited_vk"></li>
+												<li class="tariffs-unlimited_ok"></li>
+											</ul>
+										</div>
+										<div class="tariffs-item__price">
+											250 ₽ <span>250 ₽ </span>
+										</div>
+										<div class="tariffs-item__buttons">
+											<a href="#" class="btn button">Подключить</a>
+											<a href="#" class="btn light-button">Подробнее</a>
+										</div>
+									</article>
+								</li>
+								<li class="col33 col100_mobile">
+									<article class="tariffs-item">
+										<h3 class="tariffs-item__title" style="background-image: url(../images/find/3.png);">
+											Тариф Yota
+											<strong>На связи</strong>
+										</h3>
+										<ul class="ul tariffs-item__info">
+											<li>35 гб</li>
+											<li>500 мин</li>
+										</ul>
+										<div class="tariffs-unlimited">
+											<div class="tariffs-unlimited__title">
+												Безлимит <span class="desktop">на соц.сети</span>
+											</div>
+											<ul class="ul tariffs-unlimited__list">
+												<li class="tariffs-unlimited_whatsapp"></li>
+												<li class="tariffs-unlimited_viber"></li>
+												<li class="tariffs-unlimited_telegram"></li>
+												<li class="tariffs-unlimited_vk"></li>
+												<li class="tariffs-unlimited_ok"></li>
+											</ul>
+										</div>
+										<div class="tariffs-item__price">
+											250 ₽ <span>250 ₽ </span>
+										</div>
+										<div class="tariffs-item__buttons">
+											<a href="#" class="btn button">Подключить</a>
+											<a href="#" class="btn light-button">Подробнее</a>
+										</div>
+									</article>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="col33 col100_mobile">
-						<aside class="new-aside">
-							<h2 class="new-aside__title">
-								Читайте также
-							</h2>
-							<ul class="ul new-aside__list">
-								<li>
-									<a href="#" class="new-aside-item">
-										<div class="resp">
-											<img src="images/new/0.jpg" alt="" width="100" height="100" loading="lazy">
-										</div>
-										<span>
-											Операторы отменили роуминг между Россией и Белоруссией
-										</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="new-aside-item">
-										<div class="resp">
-											<img src="images/new/1.jpg" alt="" width="100" height="100" loading="lazy">
-										</div>
-										<span>
-											Корпоративные паркеты: какой тариф выбрать?
-										</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="new-aside-item">
-										<div class="resp">
-											<img src="images/new/2.jpg" alt="" width="100" height="100" loading="lazy">
-										</div>
-										<span>
-											Нашли тарифы для тех, кто не может жить без музыки
-										</span>
-									</a>
-								</li>
-							</ul>
-							<a href="#" class="btn arrow-button">Все статьи</a>
-						</aside>
-					</div>
 				</div>
+				
+
+				
 			</div>
 		</section>
-
-		<section class="tariffs section">
-			<div class="container">
-				<h2 class="section-title">
-					Подобрали тарифы специально для вас
-				</h2>
-
-
-				<div class="tariffs-slider">
-					<div class="swiper js-tariffs-slider">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<article class="tariffs-item">
-									<h3 class="tariffs-item__title" style="background-image: url(../images/find/1.png);">
-										Тариф Мегафон
-										<strong>Оптимальный</strong>
-									</h3>
-									<ul class="ul tariffs-item__info">
-										<li>35 гб</li>
-										<li>500 мин</li>
-									</ul>
-									<div class="tariffs-unlimited">
-										<div class="tariffs-unlimited__title">
-											Безлимит <span class="desktop">на соц.сети</span>
-										</div>
-										<ul class="ul tariffs-unlimited__list">
-											<li class="tariffs-unlimited_whatsapp"></li>
-											<li class="tariffs-unlimited_viber"></li>
-											<li class="tariffs-unlimited_telegram"></li>
-											<li class="tariffs-unlimited_vk"></li>
-											<li class="tariffs-unlimited_ok"></li>
-										</ul>
-									</div>
-									<div class="tariffs-item__price">
-										250 ₽ <span>250 ₽ </span>
-									</div>
-									<div class="tariffs-item__buttons">
-										<a href="#" class="btn button">Подключить</a>
-										<a href="#" class="btn light-button">Подробнее</a>
-									</div>
-								</article>
-							</div>
-							<div class="swiper-slide">
-								<article class="tariffs-item">
-									<h3 class="tariffs-item__title" style="background-image: url(../images/find/2.png);">
-										Тариф t2
-										<strong>Эконом</strong>
-									</h3>
-									<ul class="ul tariffs-item__info">
-										<li>35 гб</li>
-										<li>500 мин</li>
-									</ul>
-									<div class="tariffs-unlimited">
-										<div class="tariffs-unlimited__title">
-											Безлимит <span class="desktop">на соц.сети</span>
-										</div>
-										<ul class="ul tariffs-unlimited__list">
-											<li class="tariffs-unlimited_whatsapp"></li>
-											<li class="tariffs-unlimited_viber"></li>
-											<li class="tariffs-unlimited_telegram"></li>
-											<li class="tariffs-unlimited_vk"></li>
-											<li class="tariffs-unlimited_ok"></li>
-										</ul>
-									</div>
-									<div class="tariffs-item__price">
-										250 ₽ <span>250 ₽ </span>
-									</div>
-									<div class="tariffs-item__buttons">
-										<a href="#" class="btn button">Подключить</a>
-										<a href="#" class="btn light-button">Подробнее</a>
-									</div>
-								</article>
-							</div>
-							<div class="swiper-slide">
-								<article class="tariffs-item">
-									<h3 class="tariffs-item__title" style="background-image: url(../images/find/0.png);">
-										Тариф МТС
-										<strong>Оптимальный</strong>
-									</h3>
-									<ul class="ul tariffs-item__info">
-										<li>35 гб</li>
-										<li>500 мин</li>
-									</ul>
-									<div class="tariffs-unlimited">
-										<div class="tariffs-unlimited__title">
-											Безлимит <span class="desktop">на соц.сети</span>
-										</div>
-										<ul class="ul tariffs-unlimited__list">
-											<li class="tariffs-unlimited_whatsapp"></li>
-											<li class="tariffs-unlimited_viber"></li>
-											<li class="tariffs-unlimited_telegram"></li>
-											<li class="tariffs-unlimited_vk"></li>
-											<li class="tariffs-unlimited_ok"></li>
-										</ul>
-									</div>
-									<div class="tariffs-item__price">
-										250 ₽ <span>250 ₽ </span>
-									</div>
-									<div class="tariffs-item__buttons">
-										<a href="#" class="btn button">Подключить</a>
-										<a href="#" class="btn light-button">Подробнее</a>
-									</div>
-								</article>
-							</div>
-							<div class="swiper-slide">
-								<article class="tariffs-item">
-									<h3 class="tariffs-item__title" style="background-image: url(../images/find/3.png);">
-										Тариф Yota
-										<strong>На связи</strong>
-									</h3>
-									<ul class="ul tariffs-item__info">
-										<li>35 гб</li>
-										<li>500 мин</li>
-									</ul>
-									<div class="tariffs-unlimited">
-										<div class="tariffs-unlimited__title">
-											Безлимит <span class="desktop">на соц.сети</span>
-										</div>
-										<ul class="ul tariffs-unlimited__list">
-											<li class="tariffs-unlimited_whatsapp"></li>
-											<li class="tariffs-unlimited_viber"></li>
-											<li class="tariffs-unlimited_telegram"></li>
-											<li class="tariffs-unlimited_vk"></li>
-											<li class="tariffs-unlimited_ok"></li>
-										</ul>
-									</div>
-									<div class="tariffs-item__price">
-										250 ₽ <span>250 ₽ </span>
-									</div>
-									<div class="tariffs-item__buttons">
-										<a href="#" class="btn button">Подключить</a>
-										<a href="#" class="btn light-button">Подробнее</a>
-									</div>
-								</article>
-							</div>
-							<div class="swiper-slide">
-								<article class="tariffs-item">
-									<h3 class="tariffs-item__title" style="background-image: url(../images/find/0.png);">
-										Тариф Мегафон
-										<strong>Оптимальный</strong>
-									</h3>
-									<ul class="ul tariffs-item__info">
-										<li>35 гб</li>
-										<li>500 мин</li>
-									</ul>
-									<div class="tariffs-unlimited">
-										<div class="tariffs-unlimited__title">
-											Безлимит <span class="desktop">на соц.сети</span>
-										</div>
-										<ul class="ul tariffs-unlimited__list">
-											<li class="tariffs-unlimited_whatsapp"></li>
-											<li class="tariffs-unlimited_viber"></li>
-											<li class="tariffs-unlimited_telegram"></li>
-											<li class="tariffs-unlimited_vk"></li>
-											<li class="tariffs-unlimited_ok"></li>
-										</ul>
-									</div>
-									<div class="tariffs-item__price">
-										250 ₽ <span>250 ₽ </span>
-									</div>
-									<div class="tariffs-item__buttons">
-										<a href="#" class="btn button">Подключить</a>
-										<a href="#" class="btn light-button">Подробнее</a>
-									</div>
-								</article>
-							</div>
-							<div class="swiper-slide">
-								<article class="tariffs-item">
-									<h3 class="tariffs-item__title" style="background-image: url(../images/find/0.png);">
-										Тариф Мегафон
-										<strong>Оптимальный</strong>
-									</h3>
-									<ul class="ul tariffs-item__info">
-										<li>35 гб</li>
-										<li>500 мин</li>
-									</ul>
-									<div class="tariffs-unlimited">
-										<div class="tariffs-unlimited__title">
-											Безлимит <span class="desktop">на соц.сети</span>
-										</div>
-										<ul class="ul tariffs-unlimited__list">
-											<li class="tariffs-unlimited_whatsapp"></li>
-											<li class="tariffs-unlimited_viber"></li>
-											<li class="tariffs-unlimited_telegram"></li>
-											<li class="tariffs-unlimited_vk"></li>
-											<li class="tariffs-unlimited_ok"></li>
-										</ul>
-									</div>
-									<div class="tariffs-item__price">
-										250 ₽ <span>250 ₽ </span>
-									</div>
-									<div class="tariffs-item__buttons">
-										<a href="#" class="btn button">Подключить</a>
-										<a href="#" class="btn light-button">Подробнее</a>
-									</div>
-								</article>
-							</div>
-						</div>
-
-					</div>
-					<div class="swiper-nav desktop">
-						<div class="swiper-prev tariffs-slider__prev"></div>
-						<div class="swiper-next tariffs-slider__next"></div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
 
 	</main>
 
