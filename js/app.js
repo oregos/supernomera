@@ -486,7 +486,7 @@ $('.popup-with-zoom-anim').magnificPopup({
   callbacks: {
     open: function() {
 
-     if(this.currItem.src == '#order-placed'){
+     if(this.currItem.src == '#order-placed' || this.currItem.src == '#success-review'){
       const $icon = $('.order-placed-modal__icon');
       if(!$icon.hasClass('active')){
         setTimeout(function(){
