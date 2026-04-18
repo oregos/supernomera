@@ -215,9 +215,15 @@ $('.nav-list__link, .header_buttons, .logo').hover(function(){
   closeMenu()
 })
 
-$(document).on("click",".js-close-menu", function (e) {
-  closeMenu()
+$('.js-close-menu').hover(function(e){
+  if($(e.target).hasClass('js-close-menu')){
+    closeMenu()
+  }
 })
+
+// $(document).on("click",".js-close-menu", function (e) { asd
+//   closeMenu()
+// })
 
 
 
