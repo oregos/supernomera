@@ -35,8 +35,25 @@
 
 
 </head>
-<body class="white-footer">
-	<header class="header">
+<body class="cart-page">
+	<div class="desktop">
+		<header class="cart-header">
+	<div class="container">
+		<div class="cart-header__row">
+			<a href="#" class="btn back-button js-back">Вернуться назад</a>
+
+			<a href="/" class="resp logo">
+				<img src="images/logo.svg" alt="" width="38" height="38">
+				Супер<span>Номера</span>
+			</a>
+
+			<a href="#" class="btn light-button">Заказать через менеджера</a>
+		</div>
+	</div>
+</header>
+	</div>
+	<div class="mobile">
+		<header class="header">
 	<div class="header__block">
 		<div class="container">
 			<div class="header__row">
@@ -213,334 +230,62 @@
 			</div>
 		</div>
 	</header>
+	</div>
 	<main>
 
-		<section class="promotion">
-			<div class="container mobile">
-				<a href="#" class="btn back-button js-back">Назад</a>
-			</div>
-			<div class="promotion__block" style="--bg-image-desktop: url(../images/promotion/0.jpg); --bg-image-mobile: url(../images/promotion/m/0.jpg);">
-				<div class="container">
-					<ul class="ul bread desktop">
-						<li>
-							<a href="#" class="bread__link">Главная</a>
-						</li>
-						<li>
-							<a href="#" class="bread__link">Акции</a>
-						</li>
-						<li>
-							<a class="bread__link">Страница акции</a>
-						</li>
-					</ul>
-
-					<div class="promotion__content">
-						<h1 class="section-title">
-							Парные номера со скидкой в 20%
-						</h1>
-						<p class="section-text">
-							Мы предлагаем Вам эксклюзивную серию красивых парных номеров от компании со специальной скидкой 20%! Желаете порадовать своих близких, но не знаете какие номера им выбрать — выберите для них красивые парные номера!
-						</p>
-						<a href="#" class="btn button">Уставствовать в акции</a>
-					</div>
+		<section class="favorites">
+			<div class="container js-tab-parent">
+				<div class="mobile">
+					<a href="#" class="btn back-button js-back">Назад</a>
 				</div>
-			</div>
-		</section>
-
-		<section class="how-promotion">
-			<div class="container">
-				<h2 class="section-title">
-					Как <span>принять участие</span> в акции
-				</h2>
-				<ul class="ul row">
-					<li class="col33 col100_mobile">
-						<article class="how-item">
-							<h3>
-								Выберите номера
-							</h3>
-							<p>
-								Откройте <a href="#">каталог</a> и подберите парные <br>номера, которые вам нравятся — для себя,<br> близких или партнёров.
-							</p>
-						</article>
-					</li>
-					<li class="col33 col100_mobile">
-						<article class="how-item">
-							<h3>
-								Оформите заказ
-							</h3>
-							<p>
-								Добавьте выбранные номера в корзину<br> и оформите заказ — скидка применится<br> автоматически.
-							</p>
-						</article>
-					</li>
-					<li class="col33 col100_mobile">
-						<article class="how-item">
-							<h3>
-								Получите сим-карты
-							</h3>
-							<p>
-								Доставим удобным способом — курьером <br>до двери или самовывозом из офиса. Как <br>вам комфортнее.
-							</p>
-						</article>
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		<section class="find">
-	<div class="container">
-		<h2 class="section-title">
-			Красота в деталях
-		</h2>
-		<p class="section-text mobile">
-			Каждая цифра имеет значение.  Найдите номер, который будет работать на вас – легко запоминающийся, удобный, красивый.
-		</p>
-		<div class="row">
-			<div class="col38 desktop">
-				<aside class="find-aside">
-					<div class="form-group">
-						<input type="text" placeholder="Введите до 6 цифр" data-max="6" class="js_input-only-num">
-					</div>
-					<label class="slide-checkbox">
-						<input type="checkbox">
-						<span><i></i>Сделать красивый «хвост»</span>
-					</label>
-					<ul class="ul checkbox-buttons">
+				<h1 class="section-title">
+					Избранное
+				</h1>
+				<div class="favorites__block">
+					<ul class="ul checkbox-buttons js-tab-buttons">
 						<li>
 							<label class="button-radio">
-								<input type="radio" name="type" checked>
-								<span>Все</span>
+								<input type="radio" name="type" checked="">
+								<span>Номера</span>
 							</label>
 						</li>
 						<li>
 							<label class="button-radio">
 								<input type="radio" name="type">
-								<span>Бронзовые</span>
-							</label>
-						</li>
-						<li>
-							<label class="button-radio">
-								<input type="radio" name="type">
-								<span>Серебряные</span>
-							</label>
-						</li>
-						<li>
-							<label class="button-radio">
-								<input type="radio" name="type">
-								<span>Золотые </span>
-							</label>
-						</li>
-						<li>
-							<label class="button-radio">
-								<input type="radio" name="type" disabled>
-								<span>Золотые </span>
+								<span>Тарифы</span>
 							</label>
 						</li>
 					</ul>
-
-					<div class="slider-range">
-						<div class="slider-range__top">
-							<div class="slider-range__title">
-								Цена
-							</div>
-							<div class="slider-range__nums">
-								<div><span id="slider-range-min">250</span> ₽</div> - <div><span id="slider-range-max">2000</span> ₽</div>
+					<div class="favorites__items js-tab-items">
+						<div class="favorites__item">
+							<div class="favorites-epmty">
+								<h2 class="favorites-epmty__title">
+									В избранном пока ничего нет
+								</h2>
+								<p class="favorites-epmty__text">
+									Это отличный повод найти что-то особенное среди <br>доступных номеров
+								</p>
+								<a href="#" class="btn button">Подобрать номер</a>
 							</div>
 						</div>
-						<div id="slider-range" data-min="0" data-max="5000" data-start-min="250" data-start-max="2000"></div>
-					</div>
-
-				</aside>
-			</div>
-			<div class="col62 col100_mobile">
-				<div class="find__right">
-					<ul class="ul find__list">
-						<li>
-							<div class="find-item" style="background-image: url(images/find/0.png);">
-								<div class="find-item__num">
-									+7 967 325 <span>11</span> <span>11</span>
-								</div>
-								<div class="find-item__right">
-									<div class="find-item__text">12 000 ₽</div>
-									<div class="find-item__text">от 1 250 ₽/мес</div>
-									<button class="btn light-button">Купить</button>
-									<button class="btn favorite-button">Добавить в избранное</button>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="find-item" style="background-image: url(images/find/1.png);">
-								<div class="find-item__num">
-									+7 967 325 <span>11</span> <span>11</span>
-								</div>
-								<div class="find-item__right">
-									<div class="find-item__text">12 000 ₽</div>
-									<div class="find-item__text">от 1 250 ₽/мес</div>
-									<button class="btn light-button">Купить</button>
-									<button class="btn favorite-button">Добавить в избранное</button>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="find-item" style="background-image: url(images/find/2.png);">
-								<div class="find-item__num">
-									+7 967 325 <span>11</span> <span>11</span>
-								</div>
-								<div class="find-item__right">
-									<div class="find-item__text">12 000 ₽</div>
-									<div class="find-item__text">от 1 250 ₽/мес</div>
-									<button class="btn light-button">Купить</button>
-									<button class="btn favorite-button">Добавить в избранное</button>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="find-item" style="background-image: url(images/find/3.png);">
-								<div class="find-item__num">
-									+7 967 325 <span>11</span> <span>11</span>
-								</div>
-								<div class="find-item__right">
-									<div class="find-item__text">12 000 ₽</div>
-									<div class="find-item__text">от 1 250 ₽/мес</div>
-									<button class="btn light-button">Купить</button>
-									<button class="btn favorite-button">Добавить в избранное</button>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="find-item" style="background-image: url(images/find/4.png);">
-								<div class="find-item__num">
-									+7 967 325 <span>11</span> <span>11</span>
-								</div>
-								<div class="find-item__right">
-									<div class="find-item__text">12 000 ₽</div>
-									<div class="find-item__text">от 1 250 ₽/мес</div>
-									<button class="btn light-button">Купить</button>
-									<button class="btn favorite-button">Добавить в избранное</button>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="find-item" style="background-image: url(images/find/0.png);">
-								<div class="find-item__num">
-									+7 967 325 <span>11</span> <span>11</span>
-								</div>
-								<div class="find-item__right">
-									<div class="find-item__text">12 000 ₽</div>
-									<div class="find-item__text">от 1 250 ₽/мес</div>
-									<button class="btn light-button">Купить</button>
-									<button class="btn favorite-button">Добавить в избранное</button>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="find-item" style="background-image: url(images/find/1.png);">
-								<div class="find-item__num">
-									+7 967 325 <span>11</span> <span>11</span>
-								</div>
-								<div class="find-item__right">
-									<div class="find-item__text">12 000 ₽</div>
-									<div class="find-item__text">от 1 250 ₽/мес</div>
-									<button class="btn light-button">Купить</button>
-									<button class="btn favorite-button">Добавить в избранное</button>
-								</div>
-							</div>
-						</li>
-					</ul>
-
-					<div class="find__buttons">
-						<button class="btn reset-button">Обновить список</button>
-						<a href="#" class="btn button">Показать больше номеров</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-		<section class="how-section">
-			<div class="container">
-				<div class="how-form">
-	<form>
-		<div class="how-form__block">
-			<h2 class="section-title">
-				Не можете определиться?
-			</h2>
-			<p class="section-text">
-				Выберите номер мечты вместе с нашим менеджером. Мы поможем найти лучший вариант и оформим всё на выгодных условиях.
-			</p>
-			<div class="row row_12">
-				<div class="col36 col100_mobile">
-					<div class="form-group form-group_light">
-						<input type="text" placeholder="Ваше имя">
-					</div>
-				</div>
-				<div class="col36 col100_mobile">
-					<div class="form-group form-group_light">
-						<input type="tel" placeholder="+7 ___ ___ __ __" data-mask>
-					</div>
-				</div>
-				<div class="col28 col100_mobile">
-					<button class="btn button button_white">Отправить заявку</button>
-				</div>
-			</div>
-			<p class="form-text">
-				Нажимая на кнопку, Вы соглашаетесь с правилами <a href="#">Политики Конфиденциальности</a>
-			</p>
-		</div>
-	</form>
-</div>
-			</div>
-		</section>
-		
-		<section class="section save">
-			<div class="container">
-				<h2 class="section-title">
-					Ещё больше акций  🎉
-				</h2>
-
-				<div class="save-slider">
-					<div class="swiper js-save-slider">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<a href="#" class="save-slider__item" style="background-image: url(images/save/2.jpg);">
-									<div class="save-slider__date">
-										до 03.04.2025
-									</div>
-									<div class="save-slider__title">
-										Парные номера <br>со скидкой в 20%
-									</div>
-								</a>
-							</div>
-							<div class="swiper-slide">
-								<a href="#" class="save-slider__item" style="background-image: url(images/save/0.jpg);">
-									<div class="save-slider__date">
-										до 03.04.2025
-									</div>
-									<div class="save-slider__title">
-										Подключите тариф от МТС, <br>Мегафон или Билайн и <br>получите второй в подарок!
-									</div>
-								</a>
-							</div>
-							<div class="swiper-slide">
-								<a href="#" class="save-slider__item" style="background-image: url(images/save/1.jpg);">
-									<div class="save-slider__date">
-										до 03.04.2025
-									</div>
-									<div class="save-slider__title">
-										Юридическим лицам - <br>подключение бесплатно
-									</div>
-								</a>
+						<div class="favorites__item">
+							<div class="favorites-epmty">
+								<h2 class="favorites-epmty__title">
+									В избранном пока ничего нет
+								</h2>
+								<p class="favorites-epmty__text">
+									Это отличный повод найти что-то особенное среди <br>доступных тарифов
+								</p>
+								<a href="#" class="btn button">Подобрать тариф</a>
 							</div>
 						</div>
-
 					</div>
 				</div>
+				
 
+				
 			</div>
 		</section>
-
-
-
 
 	</main>
 
