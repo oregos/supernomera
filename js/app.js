@@ -359,19 +359,31 @@ if($desktop){
 }
 
 /*-------------------------Закрепить поиск--------------------------------------*/
+function closeSearchPaner(){
+  if($('.selection__search').hasClass('selection__search_padding')){
+    $('.selection__search').removeClass('selection__search_padding');
+  setTimeout(function(){
+    $('.selection__search').removeClass('selection__search_fixed');
+    $('.selection__search').addClass('selection__search_view')
+  }, 250)
+  }
+}
+
 if($('.selection__search').length){
   const $selectionSearchTop = $('.selection__search').offset().top;
   const $stop = $('.numbers').innerHeight() + $('.numbers').offset().top;
   $(document).on("scroll", function(){
     const $top = $(this).scrollTop();
-    if($top > $selectionSearchTop - $('header').innerHeight() * 1.3){
+    if($top > $selectionSearchTop - $('header').innerHeight() / 3){
       if($top < $stop - $('header').innerHeight() * 5){
         $('.selection__search').addClass('selection__search_fixed')
+        $('.selection__search').addClass('selection__search_padding')
+        $('.selection__search').removeClass('selection__search_view')
       } else{
-        $('.selection__search').removeClass('selection__search_fixed')
+        closeSearchPaner()
       }
     } else {
-      $('.selection__search').removeClass('selection__search_fixed')
+      closeSearchPaner()
     }
   })
 }
