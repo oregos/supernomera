@@ -320,13 +320,51 @@
 			<div class="col38 desktop">
 				<aside class="find-aside">
 					<div class="form-group">
-						<input type="text" placeholder="Введите до 6 цифр" data-max="6" class="js_input-only-num">
+						<input type="text" placeholder="Введите до 6 цифр" data-max="6" class="js_input-only-num" disabled>
 					</div>
 					<label class="slide-checkbox">
 						<input type="checkbox">
 						<span><i></i>Сделать красивый «хвост»</span>
 					</label>
-					<ul class="ul checkbox-buttons">
+					<ul class="ul universal-radio__list">
+						<li>
+							<label class="universal-radio">
+								<input type="radio" name="type" checked>
+								<span>Все</span>
+							</label>
+						</li>
+						<li>
+							<label class="universal-radio universal-radio_icon universal-radio_bronze">
+								<input type="radio" name="type" disabled>
+								<span><i>Бронза</i></span>
+							</label>
+						</li>
+						<li>
+							<label class="universal-radio universal-radio_icon universal-radio_silver">
+								<input type="radio" name="type">
+								<span><i>Серебро</i></span>
+							</label>
+						</li>
+						<li>
+							<label class="universal-radio universal-radio_icon universal-radio_gold">
+								<input type="radio" name="type">
+								<span><i>Золото</i></span>
+							</label>
+						</li>
+						<li>
+							<label class="universal-radio universal-radio_icon universal-radio_platinum">
+								<input type="radio" name="type">
+								<span><i>Платина</i></span>
+							</label>
+						</li>
+						<li>
+							<label class="universal-radio universal-radio_icon universal-radio_diamond">
+								<input type="radio" name="type">
+								<span><i>Бриллиант</i></span>
+							</label>
+						</li>
+					</ul>
+<!-- 					<ul class="ul checkbox-buttons">
 						<li>
 							<label class="button-radio">
 								<input type="radio" name="type" checked>
@@ -357,7 +395,7 @@
 								<span>Золотые </span>
 							</label>
 						</li>
-					</ul>
+					</ul> -->
 
 					<div class="slider-range">
 						<div class="slider-range__top">
@@ -1495,183 +1533,187 @@
 									<li>
 										<label class="button-radio button-radio_black">
 											<input type="radio" name="internet">
-											<span>50 <i>ГБ</i></span>
-										</label>
-									</li>
-								</ul>
+											<span>
+												<svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M32.4583 8.54167C32.4583 4.98008 29.6989 2.08333 26.2843 2.08333C24.5223 2.08345 23.0797 2.86438 21.7407 4.15365C20.3759 5.46786 19.1864 7.24225 17.9308 9.13737C16.7053 10.9871 15.4103 12.962 13.892 14.458C12.3487 15.9787 10.4983 17.0832 8.15324 17.0833C3.65555 17.0833 5.12575e-08 13.2644 0 8.54167C0 3.81898 3.65555 0 8.15324 0C10.9611 0.000151833 13.1679 1.67355 15.01 3.71663C15.3861 4.13385 15.3699 4.79356 14.9736 5.18962C14.5772 5.58561 13.9505 5.56855 13.5743 5.15137C11.8653 3.2559 10.1471 2.08348 8.15324 2.08333C4.7386 2.08333 1.97917 4.98008 1.97917 8.54167C1.97917 12.1033 4.7386 15 8.15324 15C9.83829 14.9999 11.229 14.2294 12.5399 12.9378C13.8759 11.6215 15.0484 9.84605 16.3073 7.94596C17.5362 6.09111 18.8488 4.11545 20.4047 2.61719C21.9862 1.09435 23.8835 0.000115993 26.2843 0C30.782 0 34.4375 3.81898 34.4375 8.54167C34.4375 13.2644 30.782 17.0833 26.2843 17.0833C23.4277 17.0832 21.2259 15.084 19.3796 12.8288C19.0228 12.393 19.0693 11.7354 19.4832 11.3599C19.8972 10.9843 20.5219 11.0331 20.8787 11.4689C22.6741 13.6619 24.3628 14.9998 26.2843 15C29.6989 15 32.4583 12.1033 32.4583 8.54167Z"/>
+												</svg>
+												<i>ГБ</i></span>
+											</label>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</div>
-						<div class="unique-item">
-							<h3 class="unique-item__title">
-								Звонки
-							</h3>
-							<div class="unique-item__scroll">
-								<ul class="ul unique-item__row">
-									<li>
-										<label class="button-radio button-radio_black">
-											<input type="radio" name="calls" checked>
-											<span>100 <i>мин</i></span>
-										</label>
-									</li>
-									<li>
-										<label class="button-radio button-radio_black">
-											<input type="radio" name="calls">
-											<span>250 <i>мин</i></span>
-										</label>
-									</li>
-									<li>
-										<label class="button-radio button-radio_black">
-											<input type="radio" name="calls">
-											<span>400 <i>мин</i></span>
-										</label>
-									</li>
-									<li>
-										<label class="button-radio button-radio_black">
-											<input type="radio" name="calls">
-											<span>500 <i>мин</i></span>
-										</label>
-									</li>
-								</ul>
+							<div class="unique-item">
+								<h3 class="unique-item__title">
+									Звонки
+								</h3>
+								<div class="unique-item__scroll">
+									<ul class="ul unique-item__row">
+										<li>
+											<label class="button-radio button-radio_black">
+												<input type="radio" name="calls" checked>
+												<span>100 <i>мин</i></span>
+											</label>
+										</li>
+										<li>
+											<label class="button-radio button-radio_black">
+												<input type="radio" name="calls">
+												<span>250 <i>мин</i></span>
+											</label>
+										</li>
+										<li>
+											<label class="button-radio button-radio_black">
+												<input type="radio" name="calls">
+												<span>400 <i>мин</i></span>
+											</label>
+										</li>
+										<li>
+											<label class="button-radio button-radio_black">
+												<input type="radio" name="calls">
+												<span>500 <i>мин</i></span>
+											</label>
+										</li>
+									</ul>
+								</div>
 							</div>
-						</div>
-						<div class="unique-item">
-							<h3 class="unique-item__title">
-								Безлимитные услуги
-							</h3>
-							<div class="unique-item__wrap">
-								<ul class="ul row row_16">
-									<li class="col50">
-										<div class="unlimited">
-											<div class="unlimited__title">
-												Мессенджеры
-											</div>
-											<ul class="ul unlimited__list">
-												<li class="unlimited_whatsapp"></li>
-												<li class="unlimited_viber"></li>
-												<li class="unlimited_telegram"></li>
-											</ul>
-											<div class="unlimited__included">Включено</div>
-										</div>
-									</li>
-									<li class="col50">
-										<div class="unlimited">
-											<div>
-												<label class="slide-checkbox">
-													<input type="checkbox">
-													<span><i></i>Социальные сети</span>
-												</label>
-												<div class="unlimited__price">
-													150 ₽ / мес
+							<div class="unique-item">
+								<h3 class="unique-item__title">
+									Безлимитные услуги
+								</h3>
+								<div class="unique-item__wrap">
+									<ul class="ul row row_16">
+										<li class="col50">
+											<div class="unlimited">
+												<div class="unlimited__title">
+													Мессенджеры
 												</div>
+												<ul class="ul unlimited__list">
+													<li class="unlimited_whatsapp"></li>
+													<li class="unlimited_viber"></li>
+													<li class="unlimited_telegram"></li>
+												</ul>
+												<div class="unlimited__included">Включено</div>
 											</div>
-											<ul class="ul unlimited__list">
-												<li class="unlimited_vk"></li>
-												<li class="unlimited_ok"></li>
-											</ul>
-										</div>
-									</li>
-									<li class="col50">
-										<div class="unlimited">
-											<div>
-												<label class="slide-checkbox">
-													<input type="checkbox">
-													<span><i></i>ВК Музыка</span>
-												</label>
-												<div class="unlimited__price">
-													50 ₽ / мес
+										</li>
+										<li class="col50">
+											<div class="unlimited">
+												<div>
+													<label class="slide-checkbox">
+														<input type="checkbox">
+														<span><i></i>Социальные сети</span>
+													</label>
+													<div class="unlimited__price">
+														150 ₽ / мес
+													</div>
 												</div>
+												<ul class="ul unlimited__list">
+													<li class="unlimited_vk"></li>
+													<li class="unlimited_ok"></li>
+												</ul>
 											</div>
-											<ul class="ul unlimited__list">
-												<li class="unlimited_boom"></li>
-											</ul>
-										</div>
-									</li>
-									<li class="col50">
-										<div class="unlimited">
-											<div>
-												<label class="slide-checkbox">
-													<input type="checkbox">
-													<span><i></i>Яндекс</span>
-												</label>
-												<div class="unlimited__price">
-													150 ₽ / мес
+										</li>
+										<li class="col50">
+											<div class="unlimited">
+												<div>
+													<label class="slide-checkbox">
+														<input type="checkbox">
+														<span><i></i>ВК Музыка</span>
+													</label>
+													<div class="unlimited__price">
+														50 ₽ / мес
+													</div>
 												</div>
+												<ul class="ul unlimited__list">
+													<li class="unlimited_boom"></li>
+												</ul>
 											</div>
-											<ul class="ul unlimited__list">
-												<li class="unlimited_yandex-map"></li>
-												<li class="unlimited_yandex-nav"></li>
-												<li class="unlimited_yandex-mar"></li>
-												<li class="unlimited_yandex-food"></li>
-												<li class="unlimited_yandex-mus"></li>
-											</ul>
-										</div>
-									</li>
-									<li class="col50">
-										<div class="unlimited">
-											<div>
-												<label class="slide-checkbox">
-													<input type="checkbox">
-													<span><i></i>Видео</span>
-												</label>
-												<div class="unlimited__price">
-													300 ₽ / мес
+										</li>
+										<li class="col50">
+											<div class="unlimited">
+												<div>
+													<label class="slide-checkbox">
+														<input type="checkbox">
+														<span><i></i>Яндекс</span>
+													</label>
+													<div class="unlimited__price">
+														150 ₽ / мес
+													</div>
 												</div>
+												<ul class="ul unlimited__list">
+													<li class="unlimited_yandex-map"></li>
+													<li class="unlimited_yandex-nav"></li>
+													<li class="unlimited_yandex-mar"></li>
+													<li class="unlimited_yandex-food"></li>
+													<li class="unlimited_yandex-mus"></li>
+												</ul>
 											</div>
-											<ul class="ul unlimited__list">
-												<li class="unlimited_youtube"></li>
-												<li class="unlimited_twitch"></li>
-											</ul>
-										</div>
-									</li>
-									<li class="col50">
-										<div class="unlimited">
-											<div>
-												<label class="slide-checkbox">
-													<input type="checkbox">
-													<span><i></i>50 мин на СНГ</span>
-												</label>
-												<div class="unlimited__price">
-													250 ₽ / мес
+										</li>
+										<li class="col50">
+											<div class="unlimited">
+												<div>
+													<label class="slide-checkbox">
+														<input type="checkbox">
+														<span><i></i>Видео</span>
+													</label>
+													<div class="unlimited__price">
+														300 ₽ / мес
+													</div>
 												</div>
+												<ul class="ul unlimited__list">
+													<li class="unlimited_youtube"></li>
+													<li class="unlimited_twitch"></li>
+												</ul>
 											</div>
-											<ul class="ul unlimited__list unlimited__list_flags">
-												<li class="unlimited_kg"></li>
-												<li class="unlimited_tm"></li>
-												<li class="unlimited_uz"></li>
-												<li class="unlimited_am"></li>
-												<li class="unlimited_tj"></li>
-											</ul>
-										</div>
-									</li>
-								</ul>
+										</li>
+										<li class="col50">
+											<div class="unlimited">
+												<div>
+													<label class="slide-checkbox">
+														<input type="checkbox">
+														<span><i></i>50 мин на СНГ</span>
+													</label>
+													<div class="unlimited__price">
+														250 ₽ / мес
+													</div>
+												</div>
+												<ul class="ul unlimited__list unlimited__list_flags">
+													<li class="unlimited_kg"></li>
+													<li class="unlimited_tm"></li>
+													<li class="unlimited_uz"></li>
+													<li class="unlimited_am"></li>
+													<li class="unlimited_tj"></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col36 col100_mobile">
-					<div class="unique-form">
-						<h3 class="unique-form__title">
-							Получить персональное предложение
-						</h3>
-						<p class="section-text">
-							Оставьте заявку и менеджер подберет вам тариф на самых выгодных условиях.
-						</p>
-						<div class="form-group form-group_light">
-							<input type="text" placeholder="Ваше имя">
+					<div class="col36 col100_mobile">
+						<div class="unique-form">
+							<h3 class="unique-form__title">
+								Получить персональное предложение
+							</h3>
+							<p class="section-text">
+								Оставьте заявку и менеджер подберет вам тариф на самых выгодных условиях.
+							</p>
+							<div class="form-group form-group_light">
+								<input type="text" placeholder="Ваше имя">
+							</div>
+							<div class="form-group form-group_light">
+								<input type="tel" placeholder="+7 ___ ___ __ __" data-mask="">
+							</div>
+							<button class="btn button button_white">Отправить заявку</button>
+							<p class="form-text">
+								Нажимая на кнопку, Вы соглашаетесь с правилами<br> <a href="#">Политики Конфиденциальности</a>
+							</p>
 						</div>
-						<div class="form-group form-group_light">
-							<input type="tel" placeholder="+7 ___ ___ __ __" data-mask="">
-						</div>
-						<button class="btn button button_white">Отправить заявку</button>
-						<p class="form-text">
-							Нажимая на кнопку, Вы соглашаетесь с правилами<br> <a href="#">Политики Конфиденциальности</a>
-						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
 
 <section class="section answers">
