@@ -253,7 +253,7 @@ $(document).on("click",".js-close-mobile-menu", function (e) {
 
 
  /*-------------------------Суб меню в моб меню--------------------------------------*/
-$(document).on("click",".js-sub-menu a, .js-sub-menu span", function (e) {
+$(document).on("click",".js-sub-menu>a, .js-sub-menu span", function (e) {
   e.preventDefault();
   const $ths = $(this);
   $ths.parent().toggleClass('menu-list__li_sub_active')
