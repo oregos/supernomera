@@ -238,29 +238,79 @@
 
 				<div class="row tariffs-page__row row_16">
 					<div>
-						<div class="slider-range">
-							<div class="slider-range__top">
-								<div class="slider-range__title">
-									Звонки
+						<div class="tariffs-filter">
+							<div class="tariffs-filter__top">
+								<div class="tariffs-filter__title">
+									Звонки, мин
 								</div>
-								<div class="slider-range__nums">
-									<div><span id="slider-calls-min">250</span> минут</div>
-								</div>
+								<button class="btn text-button js-reset-filter">Сбросить</button>
 							</div>
-							<div id="slider-calls" data-min="0" data-max="750" data-start-min="250"></div>
+							<ul class="ul tariffs-filter__list js-filter">
+								<li>
+									<label class="border-radio">
+										<input type="radio" name="calls">
+										<span>до 500</span>
+									</label>
+								</li>
+								<li>
+									<label class="border-radio">
+										<input type="radio" name="calls">
+										<span>500–1 000</span>
+									</label>
+								</li>
+								<li>
+									<label class="border-radio">
+										<input type="radio" name="calls">
+										<span>1 000–3 000</span>
+									</label>
+								</li>
+								<li>
+									<label class="border-radio">
+										<input type="radio" name="calls">
+										<span>3 000+</span>
+									</label>
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div>
-						<div class="slider-range">
-							<div class="slider-range__top">
-								<div class="slider-range__title">
-									Интернет
+						<div class="tariffs-filter">
+							<div class="tariffs-filter__top">
+								<div class="tariffs-filter__title">
+									Интернет, ГБ
 								</div>
-								<div class="slider-range__nums">
-									<div><span id="slider-inet-min">250</span> гб</div>
-								</div>
+								<button class="btn text-button js-reset-filter">Сбросить</button>
 							</div>
-							<div id="slider-inet" data-min="0" data-max="75" data-start-min="25"></div>
+							<ul class="ul tariffs-filter__list js-filter">
+								<li>
+									<label class="border-radio">
+										<input type="radio" name="internet">
+										<span>до 10</span>
+									</label>
+								</li>
+								<li>
+									<label class="border-radio">
+										<input type="radio" name="internet">
+										<span>10–35</span>
+									</label>
+								</li>
+								<li>
+									<label class="border-radio">
+										<input type="radio" name="internet">
+										<span>35+</span>
+									</label>
+								</li>
+								<li>
+									<label class="border-radio">
+										<input type="radio" name="internet">
+										<span>
+											<svg width="22" height="11" viewBox="0 0 22 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M20.5 5.39474C20.5 3.14532 18.7572 1.31579 16.6006 1.31579C15.4878 1.31586 14.5767 1.80908 13.731 2.62336C12.869 3.45339 12.1177 4.57405 11.3247 5.77097C10.5507 6.93923 9.73284 8.1865 8.77393 9.13137C7.79916 10.0918 6.63053 10.7894 5.14941 10.7895C2.30877 10.7895 3.23731e-08 8.37749 0 5.39474C0 2.41199 2.30877 0 5.14941 0C6.92277 9.58942e-05 8.31654 1.05698 9.47998 2.34735C9.71756 2.61086 9.70729 3.02751 9.45703 3.27765C9.20668 3.52776 8.81087 3.51698 8.57324 3.2535C7.49388 2.05636 6.40869 1.31588 5.14941 1.31579C2.9928 1.31579 1.25 3.14532 1.25 5.39474C1.25 7.64416 2.9928 9.47368 5.14941 9.47368C6.21366 9.47361 7.09202 8.987 7.91992 8.17126C8.7637 7.33987 9.50424 6.21856 10.2993 5.0185C11.0755 3.84702 11.9045 2.59923 12.8872 1.65296C13.886 0.691167 15.0843 7.32588e-05 16.6006 0C19.4412 0 21.75 2.41199 21.75 5.39474C21.75 8.37749 19.4412 10.7895 16.6006 10.7895C14.7965 10.7894 13.4058 9.52672 12.2397 8.10239C12.0144 7.82716 12.0437 7.41185 12.3052 7.17465C12.5667 6.93746 12.9612 6.96828 13.1865 7.24352C14.3205 8.62858 15.387 9.47357 16.6006 9.47368C18.7572 9.47368 20.5 7.64416 20.5 5.39474Z" fill="black" />
+											</svg>
+										</span>
+									</label>
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div>

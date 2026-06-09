@@ -362,10 +362,10 @@ if($desktop){
 function closeSearchPaner(){
   if($('.selection__search').hasClass('selection__search_padding')){
     $('.selection__search').removeClass('selection__search_padding');
-  setTimeout(function(){
-    $('.selection__search').removeClass('selection__search_fixed');
-    $('.selection__search').addClass('selection__search_view')
-  }, 250)
+    setTimeout(function(){
+      $('.selection__search').removeClass('selection__search_fixed');
+      $('.selection__search').addClass('selection__search_view')
+    }, 250)
   }
 }
 
@@ -589,6 +589,27 @@ $(document).on("change",".js-tab-buttons input", function (e) {
  const $ths = $(this);
  const $parent = $ths.parents('.js-tab-parent');
  $parent.find('.js-tab-items>div').hide().eq($ths.parent().parent().index()).fadeIn();
+})
+
+
+/*------------------------Сброс фильтра и появление радиокноки--------------------------------------*/
+
+$('.js-filter').each(function(){
+  const $list = $(this);
+  const $btn = $list.parents('.tariffs-filter').find('.js-reset-filter');
+
+  // Отслеживаем выбор радиокнопки
+  $list.on('change', 'input[type="radio"]', function() {
+    if ($list.find('input[type="radio"]').is(':checked')) {
+      $btn.addClass('show');
+    }
+  });
+
+  //Сбрасываем выбор при нажатии
+  $btn.on('click', function() {
+    $list.find('input[type="radio"]').prop('checked', false);
+        $(this).removeClass('show');
+      });
 })
 
 
