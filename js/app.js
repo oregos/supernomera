@@ -30,6 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
 //Инициализация
   sliderRange("#slider-range", '#slider-range-min', '#slider-range-max')
 
+  //disabled на ползунок
+  setTimeout(function(){
+    $("#slider-range").slider("disable");
+  },1000)
+  setTimeout(function(){
+    $("#slider-range").slider("enable");
+  },2000)
+  
+
 
 /*----------------------Слайдер от-------------------------------------------*/
   function sliderRangeMin($id, $idMin){
