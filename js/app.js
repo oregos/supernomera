@@ -602,14 +602,25 @@ $('.js-filter').each(function(){
   $list.on('change', 'input[type="radio"]', function() {
     if ($list.find('input[type="radio"]').is(':checked')) {
       $btn.addClass('show');
+      $list.find('input[type="radio"]').removeAttr('data-checked');
+      $(this).attr('data-checked', true);
     }
   });
 
+  //Убрать активность у радиокнопки при повторнор нажатии
+  $list.on('click', 'input[data-checked]', function() {
+    const $ths = $(this)
+    if ($ths.attr('data-checked')) {
+      $ths.prop('checked', false).removeAttr('data-checked');
+      $btn.removeClass('show');
+    }
+  })
+
   //Сбрасываем выбор при нажатии
   $btn.on('click', function() {
-    $list.find('input[type="radio"]').prop('checked', false);
-        $(this).removeClass('show');
-      });
+    $list.find('input[type="radio"]').prop('checked', false).removeAttr('data-checked');
+    $(this).removeClass('show');
+  });
 })
 
 
